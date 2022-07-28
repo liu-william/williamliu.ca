@@ -3,9 +3,9 @@ $dark-yellow: #F4D35E;
 $light-yellow: #FAF0CA;
 $coral: #E55C3E;
 
-// body {
-//     background-color: #07374F;
-// }
+body {
+    background-color: #07374F;
+}
 
 section {
     height: 500px;
@@ -65,7 +65,9 @@ footer {
     .hero-intro {
         display: flex;
         height: 100%;
-        justify-content: space-between;
+        // justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
         align-items: center;
         margin: 0 4em;
 
@@ -77,33 +79,21 @@ footer {
             // background-color: $coral;
 
             h1 {
-                font-size: 50px;
+                font-size: 60px;
                 color: $light-yellow;
                 font-weight: 500;
-                margin: 0;
             }
 
             p {
-                font-size: 15px;
+                font-size: 18px;
                 color: white;
+                padding-bottom: 1em;
             }
 
             &__subtitle {
                 font-style: normal;
                 color: $light-yellow;
-                font-size: 40px;
-            }
-        }
-
-        .hero-pic {
-            margin-bottom: 260px;
-            // background-color: #E55C3E;
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 50%;
-                width: 350px;
-                height: 390px;
+                font-size: 45px;
             }
         }
 
@@ -119,7 +109,7 @@ footer {
                 text-transform: uppercase;
                 color: $light-yellow;
                 margin-right: 2em;
-                font-size: 20px;
+                font-size: 25px;
             }
 
             &__logos {
@@ -130,13 +120,48 @@ footer {
             }
 
             &__logo{
-                width: 24px;
-                height: 24px;
+                width: 32px;
+                height: 32px;
             }
         }
 
-        .hero-socials .hero-text {
-            margin-bottom: 300px;
+        // .hero-socials .hero-text {
+        //     margin-bottom: 300px;
+        // }
+    }
+}
+
+.about-me {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 2em;
+    // height: 100vh;
+
+    &__pic {
+        // margin-bottom: 260px;
+        // background-color: #E55C3E;
+        img {
+            margin: 2em;
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            width: 350px;
+            height: 390px;
         }
+    }
+
+    &__name {
+        color: $light-yellow;
+        text-align: center;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
     }
 }
