@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap");
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #F4D35E;
+}
+
+:root {
+  --background-blue: #07374F;
+  --dark-yellow: #F4D35E;
+  --light-yellow: #FAF0CA;
+  --coral: #E55C3E;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arimo", "Arial";
+  color: white;
+  background-color: var(--background-blue);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  color: var(--dark-yellow);
+  font-size: 18px;
+}
+.hero .personal-logo {
+  height: 90px;
+  width: 100px;
+}
+.hero nav {
+  margin: 2.5rem 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.hero nav ul {
+  display: flex;
+  width: 850px;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.hero nav li {
+  text-transform: uppercase;
+}
+.hero nav .button-resume {
+  width: auto;
+  height: 20px;
+  border: solid var(--coral) 1.5px;
+  border-radius: 18px;
+  padding: 0.6rem 0.75rem;
+  margin-top: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+.hero .hero-intro {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 4rem;
+}
+.hero .hero-intro .hero-text {
+  text-transform: uppercase;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 260px;
+}
+.hero .hero-intro .hero-text h1 {
+  font-size: 60px;
+  color: var(--light-yellow);
+  font-weight: 600;
+}
+.hero .hero-intro .hero-text p {
+  font-size: 18px;
+  color: white;
+  padding-bottom: 1rem;
+}
+.hero .hero-intro .hero-text__subtitle {
+  font-style: normal;
+  color: var(--light-yellow);
+  font-size: 45px;
+}
+.hero .hero-intro .hero-socials {
+  display: flex;
+  margin-bottom: 15rem;
+  margin-right: 2rem;
+}
+.hero .hero-intro .hero-socials__text {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  color: var(--light-yellow);
+  margin-right: 2rem;
+  font-size: 25px;
+}
+.hero .hero-intro .hero-socials__logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero .hero-intro .hero-socials__logo {
+  width: 32px;
+  height: 32px;
+}
+
+.about-me {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 2rem;
+}
+.about-me__pic img {
+  margin: 2rem;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  width: 350px;
+  height: 390px;
+}
+.about-me__name {
+  color: var(--light-yellow);
+  text-align: center;
+}
+.about-me h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.about-me p {
+  font-size: 20px;
+}
+
+.projects {
+  margin: 2rem 2rem;
+}
+.projects .projects-container {
+  display: flex;
+  justify-content: space-between;
+}
+.projects .project-title-container {
+  text-align: center;
+}
+.projects .project-container {
+  margin: 2rem;
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+.projects .project-container .project-card {
+  width: 350px;
+  height: 350px;
+  box-shadow: 3px 2px 8px var(--dark-yellow);
+  scroll-snap-align: start;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  color: var(--background-blue);
+  background-color: var(--dark-yellow);
+  margin: -1rem -0.5rem;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

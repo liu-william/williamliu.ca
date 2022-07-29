@@ -1,0 +1,8 @@
+:root {
+    --background-blue: #07374F;    // css custom property
+    --dark-yellow: #F4D35E;
+    --light-yellow: #FAF0CA;
+    --coral: #E55C3E;
+}    
+// override anything in html (root used as global vars)
+// If want to use local vars, do it inside selectors

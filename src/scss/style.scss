@@ -1,29 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap');
-$dark-yellow: #F4D35E;
-$light-yellow: #FAF0CA;
-$coral: #E55C3E;
+@forward "base";
+@forward "layout";
+@forward "components";
 
-body {
-    background-color: #07374F;
-}
-
-section {
-    height: 500px;
-    background-color: #07374F;
-    font-family: "Arimo", "Arial";
-    border: solid black 1px;
-}
-
-footer {
-    height: 500px;
-    background-color: $dark-yellow;
-}
-
+// don't use width, use max width
 .hero {
     height: 100vh;
-    color: #F4D35E;
+    color: var(--dark-yellow);
     font-size: 18px;
-        
+
     .personal-logo {
         // background-color: $coral;
         height: 90px;
@@ -31,7 +15,7 @@ footer {
     }
 
     nav {
-        margin: 2.5em 4.5em;
+        margin: 2.5rem 4.5rem;
         display: flex;
         justify-content: space-between;
 
@@ -39,24 +23,24 @@ footer {
             display: flex;
             // width: 1100px;
             width: 850px;
-            // background-color: #E55C3E;
-            list-style-type: none;
             justify-content: space-around;
-            padding-top: 0.8em;
+            margin-top: 2rem;
         }
         
         li {
-            text-decoration: none;
             text-transform: uppercase;
         }
 
         .button-resume {
-            width: 130px;
+            width: auto;
             height: 20px;
+            border: solid var(--coral) 1.5px;
             border-radius: 18px;
-            padding-top: 0.8em;
-            // padding-top: 1em;
+            padding: 0.6rem 0.75rem;
+            margin-top: 2.3rem;
+            // padding-top: 1rem;
             text-align: center;
+            text-transform: uppercase;
             // background-color: $coral;
             margin: 20px;
         }
@@ -69,7 +53,7 @@ footer {
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: center;
-        margin: 0 4em;
+        margin: 0 4rem;
 
         .hero-text {
             text-transform: uppercase;
@@ -78,21 +62,14 @@ footer {
             margin-bottom: 260px;
             // background-color: $coral;
 
-            h1 {
-                font-size: 60px;
-                color: $light-yellow;
-                font-weight: 500;
-            }
-
             p {
                 font-size: 18px;
-                color: white;
-                padding-bottom: 1em;
+                padding-bottom: 1rem;
             }
 
             &__subtitle {
                 font-style: normal;
-                color: $light-yellow;
+                color: var(--light-yellow);
                 font-size: 45px;
             }
         }
@@ -100,15 +77,15 @@ footer {
         .hero-socials {
             // background-color: $coral;
             display: flex;
-            margin-bottom: 15em;
-            margin-right: 2em;
+            margin-bottom: 15rem;
+            margin-right: 2rem;
 
             &__text {
                 writing-mode: vertical-rl;
                 text-orientation: upright;
                 text-transform: uppercase;
-                color: $light-yellow;
-                margin-right: 2em;
+                color: var(--light-yellow);
+                margin-right: 2rem;
                 font-size: 25px;
             }
 
@@ -124,10 +101,6 @@ footer {
                 height: 32px;
             }
         }
-
-        // .hero-socials .hero-text {
-        //     margin-bottom: 300px;
-        // }
     }
 }
 
@@ -135,16 +108,14 @@ footer {
     color: white;
     display: flex;
     justify-content: space-around;
-    margin: 2em 2em;
+    margin: 2rem 2rem;
     // height: 100vh;
 
     &__pic {
         // margin-bottom: 260px;
         // background-color: #E55C3E;
         img {
-            margin: 2em;
-            width: 100%;
-            height: auto;
+            margin: 2rem;
             border-radius: 50%;
             width: 350px;
             height: 390px;
@@ -152,16 +123,56 @@ footer {
     }
 
     &__name {
-        color: $light-yellow;
+        color: var(--light-yellow);
         text-align: center;
-    }
-
-    h2 {
-        text-transform: uppercase;
-        font-size: 50px;
     }
 
     p {
         font-size: 20px;
     }
+}
+
+// .projects {
+//     margin: 2rem 2rem;
+
+//     .projects-container {
+//         display: flex;
+//         justify-content: space-between;
+//         // flex-direction: column;
+//     }
+    
+//     .project-title-container {
+//         text-align: center;
+//         // background-color: firebrick;
+//     }
+
+//     .project-container {
+//         margin: 2rem;
+//         display: flex;
+//         flex: auto;
+//         justify-content: space-between;
+//         // overflow-x: auto;
+//         scroll-snap-type: x mandatory;
+
+//         // flex-direction: column;
+//         // background-co lor: #F4D35E;
+//         // overflow-x: auto;
+
+//         .project-card {
+//             width: 350px;
+//             height: 350px;
+//             box-shadow: 3px 2px 8px var(--dark-yellow);
+//             scroll-snap-align: start;
+//         }
+//     }
+// }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: var(--background-blue);
+    background-color: var(--dark-yellow);
+    margin: -1rem -0.5rem;
+    font-size: 20px;
+    // margin: 2rem 0;
 }

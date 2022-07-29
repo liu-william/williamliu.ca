@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap');
+
+h1, 
+h2, 
+h3 {
+    color: var(--light-yellow);
+    line-height: 1.1;
+    margin-top: 0;    // reset rules
+    text-transform: uppercase;
+} 
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+
+p {
+    margin-top: 0;
+    color: white;
+}
+
+a, 
+a:visited, 
+a:active {
+    text-decoration: none;
+    color: #F4D35E;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+}
