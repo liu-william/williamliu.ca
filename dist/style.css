@@ -86,17 +86,23 @@ li {
 
 .nav-bar-container {
   padding: 1rem 1rem;
-  display: flex;
-  place-content: space-between;
 }
 .nav-bar-container .personal-logo {
   height: 125px;
   width: 125px;
-  margin-left: 8.2rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.nav-bar-container nav {
+  display: none;
 }
 .nav-bar-container .mobile-menu {
   width: 45px;
   height: 45px;
+  float: right;
+  display: block;
+  margin-left: auto;
   margin: 2rem 0;
   color: var(--dark-yellow);
   cursor: pointer;
@@ -120,7 +126,7 @@ li {
   text-align: center;
   margin-bottom: 1.9rem;
 }
-.hero-intro .hero-socials__logos {
+.hero-intro .hero-socials-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -185,6 +191,12 @@ li {
 .projects .projects-container .project-container .project-card p {
   text-align: center;
 }
+@media only screen and (min-width: 768px) {
+  .projects .projects-container {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
 
 .contacts {
   margin: 1.5rem 0;
@@ -228,7 +240,7 @@ li {
   margin: 1rem 0;
 }
 
-mobile-menu {
+nav.show {
   display: block;
 }
 
@@ -239,13 +251,30 @@ nav {
   height: 80vh;
   right: 0;
   top: 0;
-  background: var(--light-yellow);
+  padding: 3rem 1rem;
+  background: var(--dark-yellow);
 }
-nav .nav-item, nav .mobile-eixt {
+nav .primary-nav {
+  margin-top: 5rem;
+  text-align: center;
+}
+nav .mobile-exit {
+  width: 45px;
+  height: 45px;
+  float: right;
+}
+nav .nav-item {
   color: var(--background-blue);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  font-size: 24px;
+}
+nav .nav-socials-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 nav .nav-socials__logo {
-  width: 20px;
-  height: 20px;
-  fill: var(--background-blue);
+  width: 32px;
+  height: 32px;
 }/*# sourceMappingURL=style.css.map */

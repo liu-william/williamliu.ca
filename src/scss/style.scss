@@ -1,26 +1,30 @@
 @forward "base";
+@forward "uitls";
 // @forward "layout";
 // @forward "components";
 
 .nav-bar-container {
     padding: 1rem 1rem;
-    display: flex;
-    place-content: space-between;
 
     .personal-logo {
-        // background-color: var(--coral);
         height: 125px;
         width: 125px;
-        margin-left: 8.2rem; 
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        // margin-left: 8.2rem; 
     }
 
     nav {
-        // display: none;
+        display: none;
     }
 
     .mobile-menu {
         width: 45px;
         height: 45px;
+        float: right;
+        display: block;
+        margin-left: auto;
         margin: 2rem 0;
         color: var(--dark-yellow);
         cursor: pointer;
@@ -73,7 +77,7 @@
                 // font-size: 25px;
             }
 
-            &__logos {
+            &-container {
                 // background-color: #0743;
                 display: flex;
                 // flex-direction: column;
@@ -295,6 +299,10 @@
                 }
             }
         }
+
+        @media only screen and (min-width: 768px) {
+            column-gap: 2rem;
+        }
     }
 }
 
@@ -351,7 +359,7 @@
     }
 }
 
-mobile-menu {
+nav.show {
     display: block;
 }
 
@@ -362,15 +370,41 @@ nav {
     height: 80vh;
     right: 0;
     top: 0;
-    background: var(--light-yellow);
+    padding: 3rem 1rem;
+    background: var(--dark-yellow);
 
-    .nav-item, .mobile-eixt {
+    .primary-nav {
+        margin-top: 5rem;
+        text-align: center;
+    }
+    // a {}
+    
+    .mobile-exit {
+        width: 45px;
+        height: 45px;
+        float: right;
+    }
+
+    .nav-item {
         color: var(--background-blue);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+        font-size: 24px;
+
+        // &:hover {
+        //     font-weight: 600;
+        // }
+    }
+
+    .nav-socials-container {
+        display: flex;
+        justify-content: space-evenly;
+
     }
 
     .nav-socials__logo {
-        width: 20px;
-        height: 20px;
-        fill: var(--background-blue);
+        width: 32px;
+        height: 32px;
     }
 }
