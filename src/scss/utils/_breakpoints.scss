@@ -1,0 +1,13 @@
+$breakpoints-up: (
+    "tablet": 30em,
+    "laptop": 48em,
+    "desktop": 64em,
+    "large-desktop": 75em
+);
+// SASS map
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}

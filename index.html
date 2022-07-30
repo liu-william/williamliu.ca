@@ -10,16 +10,16 @@
 
     <body>
         <!-- NAVIGATION -->
-        <header class="nav-bar-container" id="home">
-            <!-- Personal logo -->
+        <header class="section" id="home">
+
             <div class="nav-logos-wrapper">
-                <a href="index.html""><img class="personal-logo" src="src/imgs/logos/william'sLogo.svg" alt="William's logo" title="Home"></a>
-                <img class="mobile-menu" id="mobile-menu-cta" src="src/imgs/logos/menuLogo.svg" alt="Hamburger Menu">
+                <a href="index.html""><img src="src/imgs/logos/william'sLogo.svg" alt="William's logo" title="Home" class="personal-logo"></a>
+                <img src="src/imgs/logos/menuLogo.svg" alt="Hamburger Menu" class="mobile-menu" id="mobile-menu-cta">
             </div>
 
-            <nav class="fixed-nav-bar">
+            <nav>
                 <div class="nav-container">
-                    <img class="mobile-exit" id="mobile-exit-cta" src="src/imgs/logos/menuExitLogo.svg" alt="Hamburger Exit">
+                    <img src="src/imgs/logos/menuExitLogo.svg" alt="Hamburger Exit" class="mobile-exit" id="mobile-exit-cta" >
                     <div class="nav-items-container">
                         <ul class="primary-nav">
                             <li><a href="#home" class="nav-item">Home</a></li>
@@ -28,13 +28,13 @@
                             <li><a href="#contact" class="nav-item">Contact</a></li>
                         </ul>   
                         <ul class="secondary-nav">
-                            <li><div class="button-resume nav-item">Resume</div></li>
+                            <li><a href="#" class="button-resume nav-item">Resume</a></li>
                         </ul>   
                         <div class="nav-socials-container">
-                            <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogoBlue.svg" alt="GitHub Logo" title="GitHub" class="nav-socials__logo"></a>
-                            <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogoBlue.svg" alt="LinkedIn Logo" title="LinkedIn" class="nav-socials__logo"></a>
-                            <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogoBlue.svg" alt="Twittter Logo" title="Twitter" class="nav-socials__logo"></a>
-                            <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogoBlue.svg" alt="Instagram Logo" title="Instagram" class="nav-socials__logo"></a>
+                            <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogoBlue.svg" alt="GitHub Logo" title="GitHub" class="social-logo"></a>
+                            <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogoBlue.svg" alt="LinkedIn Logo" title="LinkedIn" class="social-logo"></a>
+                            <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogoBlue.svg" alt="Twittter Logo" title="Twitter" class="social-logo"></a>
+                            <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogoBlue.svg" alt="Instagram Logo" title="Instagram" class="social-logo"></a>
                         </div>
                     </div>
                 </div>
@@ -42,28 +42,27 @@
         </header>
 
         <!-- HERO -->
-        <section class="hero">
-            <!-- might not need container -->
-            <div class="hero-intro container">
-                <div class="hero-text">
+        <section class="section">
+            <div class="hero-container">
+                <div class="hero-text-container">
                     <h2>Hello, I'm William</h2>
-                    <p class="hero-text__subtitle">Sofware Developer &amp; CS Student</p>
-                <h3>Nice to meet you!</h3>
+                    <h5>Sofware Developer &amp; CS Student</h5>
+                    <h3>Nice to meet you!</h3>
                 </div>
                 <div class="hero-socials">
-                    <div><h6 class="hero-socials__text">Follow me</h6></div>
+                    <div><h4 class="hero-socials__text">Follow me</h4></div>
                     <div class="hero-socials-container">
-                        <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogo.svg" alt="GitHub Logo" title="GitHub" class="hero-socials__logo"></a>
-                        <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogo.svg" alt="LinkedIn Logo" title="LinkedIn" class="hero-socials__logo"></a>
-                        <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogo.svg" alt="Twittter Logo" title="Twitter" class="hero-socials__logo"></a>
-                        <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogo.svg" alt="Instagram Logo" title="Instagram" class="hero-socials__logo"></a>
+                        <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogo.svg" alt="GitHub Logo" title="GitHub" class="social-logo"></a>
+                        <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogo.svg" alt="LinkedIn Logo" title="LinkedIn" class="social-logo"></a>
+                        <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogo.svg" alt="Twittter Logo" title="Twitter" class="social-logo"></a>
+                        <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogo.svg" alt="Instagram Logo" title="Instagram" class="social-logo"></a>
                     </div>                    
                 </div>
             </div>
         </section>
 
         <!-- ABOUT -->
-        <section class="about-me" id="about-me">
+        <section class="about-me section" id="about-me">
             <img src="src/imgs/pics/William1.jpg" alt="William's Headshot1">
             <div class="about-me__text">
                 <h2 class="about-me__text-name">William Liu</h2>
@@ -84,7 +83,7 @@
         <!-- Add a technologies section -->
 
         <!-- PROJECTS -->
-        <section class="projects" id="projects">
+        <section class="projects section" id="projects">
             <div class="projects-container">
                 <div class="projects-title-container">
                     <h1 class="projects-title">Projects</h1>
@@ -105,7 +104,7 @@
             </div>
         </section>
 
-        <section class="contacts" id="contact">
+        <section class="contacts section" id="contact">
             <div class="contacts-container">
                 <div class="contacts-text-container">
                     <h1 class="contacts-title">Contact Me</h1>
@@ -129,11 +128,17 @@
                         Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!I would love to connect with you!</p>
                 </div>
                 <div class="contacts-card-container">
+                    <div class="contacts-socials-container">
+                        <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogo.svg" alt="GitHub Logo" title="GitHub" class="social-logo"></a>
+                        <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogo.svg" alt="LinkedIn Logo" title="LinkedIn" class="social-logo"></a>
+                        <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogo.svg" alt="Twittter Logo" title="Twitter" class="social-logo"></a>
+                        <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogo.svg" alt="Instagram Logo" title="Instagram" class="social-logo"></a>
+                    </div>   
                     <div class="contact-card">
-                        <a class="contact-text" href="mailto: wwliu@ualberta.ca"><img class="contact-logo" src="src/imgs/logos/mailLogo.svg" alt="Mail">wwliu@ualberta.ca</a>
+                        <a class="contact-text" href="mailto: wwliu@ualberta.ca"><img src="src/imgs/logos/mailLogo.svg" alt="Mail" title="Email" class="contact-logo">wwliu@ualberta.ca</a>
                     </div>
                     <div class="contact-card">
-                        <a class="contact-text" href="tel:+1780-278-8629" class="contact-text"><img class="contact-logo" src="src/imgs/logos/phoneLogo.svg" alt="Phone">(780) 278-8629</a>
+                        <a class="contact-text" href="tel:+1780-278-8629" class="contact-text"><img src="src/imgs/logos/phoneLogo.svg" alt="Phone" title="Phone" class="contact-logo">(780) 278-8629</a>
                     </div>
                 </div>
             </div>
@@ -141,9 +146,9 @@
 
         <footer>
             <div class="footer-container">
-                <h5 class="footer-text">© 2022 All Rights Reserved</h5>
-                <h5 class="footer-text">Developed by WL☺</h5>
-                <h5 class="footer-text">Last Updated July 27, 2022</h5>
+                <h6 class="footer-text">© 2022 All Rights Reserved</h6>
+                <h6 class="footer-text">Developed by WL☺</h6>
+                <h6 class="footer-text">Last Updated July 27, 2022</h6>
             </div>
         </footer>
 
