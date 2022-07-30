@@ -15,6 +15,6 @@ body {
     margin: 0;    // reset rules for different browsers
     padding: 0;    // reset rules for different browsers
     font-family: "Arimo", "Arial";
-    color: white;
     background-color: var(--background-blue);
+    overscroll-behavior-y: none;
 }

@@ -2,7 +2,10 @@
 
 h1, 
 h2, 
-h3 {
+h3,
+h4,
+h5, 
+h6 {
     color: var(--light-yellow);
     line-height: 1.1;
     margin-top: 0;    // reset rules
@@ -10,17 +13,32 @@ h3 {
 } 
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
 p {
-    margin-top: 0;
     color: white;
 }
 
@@ -33,6 +51,8 @@ a:active {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 li {

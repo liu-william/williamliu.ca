@@ -5,68 +5,127 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>William's Website</title>
-        <link rel="stylesheet" href="src/styles.css">
+        <link rel="stylesheet" href="dist/style.css">
     </head>
 
     <body>
         <!-- Link js -->
         <script src="src/app.js"></script>
 
+        <!-- NAVIGATION -->
+        <section class="nav-bar-container">
+            <!-- Personal logo -->
+            <a href="index.html""><img  class="personal-logo" src="src/imgs/logos/william'sLogo.svg" alt="William's logo" title="Home"></a>
+            <img class="mobile-menu" id="mobile-menu-cta" src="src/imgs/logos/menuLogo.svg" alt="Hamburger Menu">
+
+            <nav>
+                <img class="mobile-exit" id="mobile-exit-cta" src="src/imgs/logos/menuExitLogo.svg" alt="Hamburger Exit">
+
+                <ul class="primary-nav">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="#about-me" class="nav-item">About Me</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>   
+                <ul class="secondary-nav">
+                    <li><div class="button-resume nav-item">Resume</div></li>
+                </ul>   
+                <div class="nav-socials__logos">
+                    <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogoBlue.svg" alt="GitHub Logo" title="GitHub" class="nav-socials__logo"></a>
+                    <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogoBlue.svg" alt="LinkedIn Logo" title="LinkedIn" class="nav-socials__logo"></a>
+                    <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogoBlue.svg" alt="Twittter Logo" title="Twitter" class="nav-socials__logo"></a>
+                    <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogoBlue.svg" alt="Instagram Logo" title="Instagram" class="nav-socials__logo"></a>
+                </div>    
+            </nav>
+        </section>
+
         <!-- HERO -->
         <section class="hero">
-                <nav>
-                    <!-- Personal logo -->
-                    <a href="index.html" class="personal-logo"><img src="src/imgs/logos/william'sLogo.svg" alt="William's logo" title="Home"></a>
-                    <ul>
-                        <li>Home</li>
-                        <li>About Me</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
-                    </ul>   
-                    <div class="button-resume">Resume</div>
-                </nav>
-                <div class="hero-intro">
-                    <div class="hero-text">
-                        <h1>Hello, I'm William</h1>
-                        <p>Sofware Developer & CS Student</p>
-                        <p><span class="hero-text__subtitle">Nice to meet you!</span></p>
-                    </div>
-                    <div class="hero-socials">
-                        <div class="hero-socials__text"><h3>Follow me</h3></div>
-                        <div class="hero-socials__logos">
-                            <a href="https://github.com/liu-william" class="hero-socials__logo"><img src="src/imgs/logos/githubLogo.svg" alt="GitHub Logo" title="GitHub"></a>
-                            <a href="https://linkedin.com/in/-williamliu" class="hero-socials__logo"><img src="src/imgs/logos/linkedinLogo.svg" alt="LinkedIn Logo" title="LinkedIn""></a>
-                            <a href="https://twitter.com/williamliu_" class="hero-socials__logo"><img src="src/imgs/logos/twitterLogo.svg" alt="Twittter Logo" title="Twitter"></a>
-                            <a href="https://instagram.com/williamm.liu" class="hero-socials__logo"><img src="src/imgs/logos/instagramLogo.svg" alt="Instagram Logo" title="Instagram"></a>
-                        </div>                    
-                    </div>
+            <!-- might not need container -->
+            <div class="hero-intro container">
+                <div class="hero-text">
+                    <h2>Hello, I'm William</h2>
+                    <p class="hero-text__subtitle">Sofware Developer &amp; CS Student</p>
+                <h3>Nice to meet you!</h3>
                 </div>
+                <div class="hero-socials">
+                    <div><h6 class="hero-socials__text">Follow me</h6></div>
+                    <div class="hero-socials__logos">
+                        <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogo.svg" alt="GitHub Logo" title="GitHub" class="hero-socials__logo"></a>
+                        <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogo.svg" alt="LinkedIn Logo" title="LinkedIn" class="hero-socials__logo"></a>
+                        <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogo.svg" alt="Twittter Logo" title="Twitter" class="hero-socials__logo"></a>
+                        <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogo.svg" alt="Instagram Logo" title="Instagram" class="hero-socials__logo"></a>
+                    </div>                    
+                </div>
+            </div>
         </section>
 
         <!-- ABOUT -->
-        <section class="about-me" id="about">
-            <div class="about-me__pic"><img src="src/imgs/pics/William1.jpg" alt="William's Headshot1"></div>
-            <div class="about-me__desc">
-                <h2 class="about-me__name">William Liu</h2>
-                <p>
-                    Hi there! I'm William, a software developer and a CS student. <br>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
-                    Quasi et mollitia necessitatibus dicta quas harum in. <br>
-                    Veniam maiores unde, dolor voluptate corrupti quam molestiae ab accusamus delectus quo atque consectetur!<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eaque quibusdam quisquam voluptates voluptatibus.<br>
-                    Cumque dolorem iusto pariatur quasi recusandae unde, culpa laborum totam nulla quod doloremque dignissimos cum tenetur?<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum. <br>
-                    Adipisci omnis molestias eveniet accusamus dolorem architecto id. <br>
-                    Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis! <br>
+        <section class="about-me container" id="about-me">
+            <img src="src/imgs/pics/William1.jpg" alt="William's Headshot1">
+            <div class="about-me__text">
+                <h2 class="about-me__text-name">William Liu</h2>
+                <p class="about-me__text-desc"> 
+                    Hi there! I'm William, a software developer and a CS student.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quasi et mollitia necessitatibus dicta quas harum in. 
+                    Veniam maiores unde, dolor voluptate corrupti quam molestiae ab accusamus delectus quo atque consectetur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eaque quibusdam quisquam voluptates voluptatibus.
+                    Cumque dolorem iusto pariatur quasi recusandae unde, culpa laborum totam nulla quod doloremque dignissimos cum tenetur?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum. 
+                    Adipisci omnis molestias eveniet accusamus dolorem architecto id.
+                    Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
                 </p>
             </div>
         </section>
 
+        <!-- Add a technologies section -->
+
         <!-- PROJECTS -->
         <section class="projects" id="projects">
+            <div class="projects-container">
+                <div class="project-title-container">
+                    <div><h1 class="project-title">Projects</h1></div>
+                    <div><p class="project-desc">Description of my projects</p></div>
+                </div>
+                <div class="project-container">
+                        <div class="project-card">
+                            <h1>Project1</h1>
+                            <p>1 fjdsakfjlksdajflsdfsfsdf</p>
+                        </div>
+                        <div class="project-card">
+                            <h1>Project2</h1>
+                        </div>
+                        <div class="project-card">
+                            <h1>Project3</h1>
+                        </div>
+                </div>
+            </section>
+
+            <section class="contacts" id="contact">
+                <div class="contacts-container">
+                    <div class="contact-title-container">
+                        <h1 class="contact-title">Contact Me</h1>
+                        <div ><p class="contact-desc">I would love to connect with you!</p></div>
+                    </div>
+                    <div class="contact-container">
+                        <div class="contact-card">
+                            <a class="contact-text" href="mailto: wwliu@ualberta.ca"><img class="contact-logo" src="src/imgs/logos/mailLogo.svg" alt="Mail">wwliu@ualberta.ca</a>
+                        </div>
+                        <div class="contact-card">
+                            <a class="contact-text" href="tel:+1780-278-8629" class="contact-text"><img class="contact-logo" src="src/imgs/logos/phoneLogo.svg" alt="Phone">(780) 278-8629</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer>
+            <div class="footer-container">
+                <h5 class="footer-text">© 2022 All Rights Reserved</h5>
+                <h5 class="footer-text">Developed by WL☺</h5>
+                <h5 class="footer-text">Last Updated July 27, 2022</h5>
+            </div>
         </footer>
 
     </body>
