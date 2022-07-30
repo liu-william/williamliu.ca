@@ -16,3 +16,7 @@ navLinks.forEach(el =>
         nav.classList.remove("show")
     })
 )
+
+window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+};
