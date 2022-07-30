@@ -15,7 +15,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arimo", "Arial";
-  background-color: var(--background-blue);
+  background: rgb(43, 64, 83);
+  background: linear-gradient(180deg, rgb(43, 64, 83) 0%, rgb(7, 55, 79) 50%, rgb(6, 31, 52) 100%);
   overscroll-behavior-y: none;
 }
 
@@ -87,12 +88,14 @@ li {
 .nav-bar-container {
   padding: 1rem 1rem;
 }
+.nav-bar-container .nav-logos-wrapper {
+  display: flex;
+  justify-content: center;
+}
 .nav-bar-container .personal-logo {
   height: 125px;
   width: 125px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
+  align-self: center;
 }
 .nav-bar-container nav {
   display: none;
@@ -100,10 +103,9 @@ li {
 .nav-bar-container .mobile-menu {
   width: 45px;
   height: 45px;
-  float: right;
-  display: block;
-  margin-left: auto;
-  margin: 2rem 0;
+  position: absolute;
+  right: 0;
+  margin: 2rem 1rem 2rem 0;
   color: var(--dark-yellow);
   cursor: pointer;
 }
@@ -151,7 +153,7 @@ li {
 }
 .about-me__text {
   text-align: center;
-  margin: 1.7rem 0.5rem 0 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
 }
 .about-me__text-name {
   color: var(--light-yellow);
@@ -162,65 +164,68 @@ li {
   font-size: 20px;
 }
 
+.projects {
+  margin: 1rem;
+}
 .projects .projects-container {
-  margin: 1rem 2rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.projects .projects-container .project-title-container {
+.projects .projects-container .projects-title-container {
   text-align: center;
   margin-bottom: 1rem;
 }
-.projects .projects-container .project-title-container .project-title {
+.projects .projects-container .projects-title-container .projects-title {
   margin-bottom: 0;
 }
-.projects .projects-container .project-container {
+.projects .projects-container .projects-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
   justify-content: center;
   row-gap: 2rem;
 }
-.projects .projects-container .project-container .project-card {
-  border-radius: 6%;
-  box-shadow: 3px 2px 8px var(--dark-yellow);
-}
-.projects .projects-container .project-container .project-card h1 {
-  text-align: center;
-}
-.projects .projects-container .project-container .project-card p {
-  text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .projects .projects-container {
+@media (min-width: 30em) {
+  .projects .projects-container .projects-card-container {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
 }
-
-.contacts {
-  margin: 1.5rem 0;
+.projects .projects-container .projects-card-container .project-card {
+  border-radius: 6%;
+  box-shadow: 3px 2px 8px var(--dark-yellow);
 }
-.contacts .contacts-container .contact-title-container {
+.projects .projects-container .projects-card-container .project-card h3 {
   text-align: center;
 }
-.contacts .contacts-container .contact-title-container .contact-title {
-  margin-top: 2.5rem;
+.projects .projects-container .projects-card-container .project-card p {
+  text-align: center;
+}
+
+.contacts {
+  margin: 1rem;
+}
+.contacts .contacts-container .contacts-text-container {
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  text-align: center;
+}
+.contacts .contacts-container .contacts-text-container .contacts-title {
   margin-bottom: 0;
 }
-.contacts .contacts-container .contact-container {
+.contacts .contacts-container .contacts-card-container {
   display: grid;
   gap: 0.5rem;
   grid-template-rows: 1fr;
   justify-content: center;
 }
-.contacts .contacts-container .contact-container .contact-card .contact-logo {
+.contacts .contacts-container .contacts-card-container .contact-card .contact-logo {
   width: 36px;
   height: 36px;
   vertical-align: middle;
   margin-right: 1.3rem;
 }
-.contacts .contacts-container .contact-container .contact-card .contact-text {
+.contacts .contacts-container .contacts-card-container .contact-card .contact-text {
   font-size: 15px;
   color: white;
   text-transform: uppercase;
@@ -248,20 +253,35 @@ nav {
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   right: 0;
   top: 0;
   padding: 3rem 1rem;
   background: var(--dark-yellow);
 }
+nav .nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+nav .nav-items-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
 nav .primary-nav {
-  margin-top: 5rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 nav .mobile-exit {
   width: 45px;
   height: 45px;
-  float: right;
+  margin-left: auto;
 }
 nav .nav-item {
   color: var(--background-blue);
