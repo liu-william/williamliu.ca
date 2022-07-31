@@ -1,3 +1,4 @@
+@use "../utils/" as u;
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap');
 
 h1, 
@@ -15,26 +16,69 @@ h6 {
 h1 {
     font-size: 50px;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
+// <h2>Hello, I'm William</h2>
 h2 {
     font-size: 36px;
     font-weight: 500;
+
+    @include u.breakpoint(laptop) {
+        font-size: 42px;
+    }
+
+    @include u.breakpoint(desktop) {
+        font-size: 48px;
+    }
 }
 
+// <h3>Nice to meet you!</h3>
 h3 {
     font-size: 34px;
     font-weight: 400;
+
+    @include u.breakpoint(laptop) {
+        font-size: 40px;
+    }
+    
+    @include u.breakpoint(desktop) {
+        font-size: 45px;
+    }
 }
 
+// Follow me
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+
+    @include u.breakpoint(laptop) {
+        font-size: 22px;
+    }
+
+    @include u.breakpoint(desktop) {
+        font-size: 30px;
+    }
+}
+
+// <h5>Sofware Developer &amp; CS Student</h5>
 h5 {
-    font-size: 20px;
-    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+
+    @include u.breakpoint(laptop) {
+        font-size: 18px;
+    }
+
+    @include u.breakpoint(desktop) {
+        font-size: 22px;
+    }
 }
 
 h6 {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
@@ -46,7 +90,6 @@ a,
 a:visited, 
 a:active {
     text-decoration: none;
-    color: #F4D35E;
 }
 
 ul {
