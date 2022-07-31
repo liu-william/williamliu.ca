@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 nav.show {
     display: block;
 }
@@ -13,11 +15,6 @@ nav.show {
     align-self: center;
 }
 
-.social-logo {
-    width: 32px;
-    height: 32px;
-}
-
 .mobile-menu {
     width: 45px;
     height: 45px;
@@ -26,6 +23,10 @@ nav.show {
     margin: 2rem 1rem 2rem 0;
     color: var(--dark-yellow);
     cursor: pointer;
+
+    @include u.breakpoint(desktop) {
+        display: none;
+    }
 } 
 
 nav {
@@ -39,6 +40,14 @@ nav {
     z-index: 999;    // for pos abs or fixed (high to sit on top of everything)
     padding: 3rem 1rem;
     background: var(--dark-yellow);
+
+    @include u.breakpoint(desktop) {
+        display: flex;
+        background: none;
+        position: unset;
+        height: auto;
+        padding: 1rem;
+    }
 }
 
 .nav-container {
@@ -46,6 +55,11 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     height: 90%;
+
+    @include u.breakpoint(desktop) {
+        flex-direction: row;
+        width: 100%;
+    }
 }
 
 .nav-items-container {
@@ -54,6 +68,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+
+    @include u.breakpoint(desktop) {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
 
 .mobile-exit {
@@ -61,18 +81,32 @@ nav {
     height: 45px;
     margin-left: auto;
     cursor: pointer;
+
+    @include u.breakpoint(desktop) {
+        display: none;
+    }
 }
 
 .primary-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include u.breakpoint(desktop) {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
 
 .secondary-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include u.breakpoint(desktop) {
+        flex-direction: row;
+    }
 }
 
 .nav-item {
@@ -85,15 +119,39 @@ nav {
     &:hover {
         font-weight: 600;
     }
+
+    @include u.breakpoint(desktop) {
+        color: var(--dark-yellow);
+        text-transform: uppercase;
+        font-size: 18px;
+        // get rid of hower effect
+    }
 }
 
 .nav-socials-container {
     display: flex;
     justify-content: space-evenly;
+
+    @include u.breakpoint(desktop) {
+        display: none;
+    }
 }
 
 .button-resume {
     border: solid var(--coral) 1.5px;
     border-radius: 18px;
     padding: 0.69rem 0.5rem;
+}
+
+.top-nav-container {
+    @include u.breakpoint(desktop) {
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    @include u.breakpoint(large-desktop) {
+        padding: 0 6rem;
+    }
 }

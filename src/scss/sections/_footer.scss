@@ -1,3 +1,5 @@
+@use "../utils" as u;
+
 .footer-container {
     padding: 1rem 0;
     display: flex;
@@ -5,6 +7,12 @@
     align-items: center;
     row-gap: 0.75rem;
     background-color: var(--dark-yellow);
+
+    @include u.breakpoint(laptop) {
+        flex-direction: row;
+        align-items: none;
+        justify-content: space-around;
+    }
 
     .footer-text { 
         color: var(--background-blue);
