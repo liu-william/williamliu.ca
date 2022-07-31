@@ -19,3 +19,17 @@ body {
     background: linear-gradient(180deg, rgba(43,64,83,1) 0%, rgba(7,55,79,1) 50%, rgba(6,31,52,1) 100%);
     overscroll-behavior-y: none;
 }
+
+.section {
+    margin: 1rem;
+}
+
+.text-container {
+    text-align: center;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.text-desc {
+    margin-top: 1rem;
+    font-size: 20px;
+}

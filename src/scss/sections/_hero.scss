@@ -1,0 +1,26 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.hero-text-container {
+    text-align: center;
+}
+
+.hero-socials {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+
+    &-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &-text {
+        color: var(--light-yellow);
+        text-align: center;
+    }
+}
