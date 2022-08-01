@@ -335,7 +335,7 @@ nav {
 }
 @media (min-width: 64em) {
   .hero-container {
-    height: calc(100vh - 206.6px - 6rem);
+    min-height: calc(100vh - 206.6px - 6rem);
     justify-content: center;
     row-gap: 5rem;
   }
@@ -348,7 +348,6 @@ nav {
   .hero-text-container {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
   }
 }
 
@@ -360,8 +359,7 @@ nav {
 }
 @media (min-width: 64em) {
   .hero-socials {
-    padding-top: 15rem;
-    row-gap: 3rem;
+    padding-top: 5rem;
   }
 }
 @media (min-width: 75em) {
@@ -413,7 +411,7 @@ nav {
 @media (min-width: 64em) {
   .hero-stretch-container {
     height: 100%;
-    margin-top: 20rem;
+    margin-top: 5rem;
     margin-bottom: 15rem;
     display: flex;
     flex-direction: column;
@@ -444,7 +442,7 @@ nav {
 }
 @media (min-width: 64em) {
   .about-me-container {
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-evenly;
   }
 }
@@ -476,13 +474,13 @@ nav {
 
 @media (min-width: 64em) {
   .about-desc {
-    font-size: 22px;
+    font-size: 18px;
     width: 540px;
   }
 }
 @media (min-width: 75em) {
   .about-desc {
-    font-size: 28px;
+    font-size: 24px;
     width: 650px;
   }
 }
