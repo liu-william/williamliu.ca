@@ -444,15 +444,26 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 64em) {
+  .contacts-container {
+    flex-direction: row;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    justify-content: space-evenly;
+    margin: 4rem;
+  }
+}
 
-.contacts-card-container {
+.contacts-info-container {
   display: grid;
   grid-template-rows: 1fr;
   justify-content: center;
 }
 @media (min-width: 64em) {
-  .contacts-card-container {
-    gap: 0.5rem;
+  .contacts-info-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
   }
 }
 
@@ -469,15 +480,21 @@ nav {
 .contact-logo {
   width: 36px;
   height: 36px;
-  vertical-align: middle;
-  margin-right: 1.3rem;
 }
 
 .contact-info {
   font-size: 15px;
   color: white;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
 }
 
 .footer-container {
