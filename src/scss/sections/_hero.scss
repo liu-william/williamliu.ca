@@ -29,8 +29,8 @@
     justify-content: center;
 
     @include u.breakpoint(desktop) {
-        padding-top: 15rem;
-        row-gap: 3rem;
+        padding-top: 5rem;
+        // row-gap: 3rem;
     }
 
     @include u.breakpoint(large-desktop) {
