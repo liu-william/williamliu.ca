@@ -27,6 +27,7 @@
     display: grid;
     grid-template-rows: 1fr;
     justify-content: center;
+    margin: 2rem 0 1rem 0;
 
     @include u.breakpoint(desktop) {
         display: flex;
@@ -50,10 +51,10 @@
 }
                 
 .contact-info {
-    font-size: 15px;
+    font-size: 16px;
     color: white;
-    text-transform: uppercase;
-    font-weight: 500;
+    font-family: "Montserrat", "Arial";
+    font-weight: 300;
     align-self: center;
     margin-left: 1rem;
 }
