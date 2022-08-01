@@ -43,8 +43,8 @@
 
 .about-desc {
     @include u.breakpoint(desktop) {
-        font-size: 24px;
-        width: 480px;
+        font-size: 22px;
+        width: 540px;
     }
 
     @include u.breakpoint(large-desktop) {
