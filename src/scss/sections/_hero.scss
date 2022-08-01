@@ -7,8 +7,6 @@
 
     @include u.breakpoint(desktop) {
         height: calc(100vh - 206.6px - 6rem);    // 2 rem for nav and 6 rem total for nav and hero
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         row-gap: 5rem;
     }
@@ -16,6 +14,12 @@
 
 .hero-text-container {
     text-align: center;
+
+    @include u.breakpoint(desktop) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }  
 }
 
 .hero-socials {
@@ -24,7 +28,13 @@
     row-gap: 1rem;
     justify-content: center;
 
+    @include u.breakpoint(desktop) {
+        padding-top: 15rem;
+        row-gap: 3rem;
+    }
+
     @include u.breakpoint(large-desktop) {
+        padding: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -49,16 +59,20 @@
     &-text {
         color: var(--light-yellow);
         text-align: center;
+
+        @include u.breakpoint(large-desktop) {
+            text-align: justify;
+        }
     }
 }
 
 .hero-socials-text {    
     
     @include u.breakpoint(large-desktop) {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    // margin-right: 2rem;
-    // font-size: 25px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        display: flex;
+        justify-content: space-around;
     }  
 }
 
@@ -66,11 +80,16 @@
     
     @include u.breakpoint(desktop) {
         height: 100%;
+        margin-top: 20rem;
         margin-bottom: 15rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        row-gap: 3rem;
     }  
 
+    @include u.breakpoint(large-desktop) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
