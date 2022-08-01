@@ -375,6 +375,14 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+@media (min-width: 64em) {
+  .about-me-container {
+    flex-direction: row;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    margin: 2rem 2rem;
+  }
+}
 
 .about-me-headshot {
   margin: 1rem;
