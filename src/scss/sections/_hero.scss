@@ -5,13 +5,6 @@
     flex-direction: column;
     row-gap: 1rem;
 
-    // @include u.breakpoint(laptop) {
-    //     flex-direction: row;
-    //     row-gap: 0;
-    //     justify-content: space-evenly;
-    //     align-items: center;
-    // }
-
     @include u.breakpoint(desktop) {
         height: calc(100vh - 206.6px - 6rem);    // 2 rem for nav and 6 rem total for nav and hero
         display: flex;

@@ -11,6 +11,16 @@
         justify-content: space-evenly;
         margin: 4rem;
     }
+
+    @include u.breakpoint(large-desktop) {
+        margin: 0 5rem;
+        column-gap: 5rem;
+    }
+
+    @include u.breakpoint(monitor) {
+        margin: 0 10rem;
+        column-gap: 15rem;
+    }
 }
         
 .contacts-info-container {

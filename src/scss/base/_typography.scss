@@ -33,6 +33,10 @@ h2 {
     @include u.breakpoint(desktop) {
         font-size: 48px;
     }
+
+    @include u.breakpoint(large-desktop) {
+        font-size: 56px;
+    }
 }
 
 // <h3>Nice to meet you!</h3>
