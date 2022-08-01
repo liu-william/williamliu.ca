@@ -24,6 +24,11 @@ body {
 .section {
   margin: 1rem;
 }
+@media (min-width: 64em) {
+  .section {
+    margin: 2rem;
+  }
+}
 
 .social-logo {
   width: 32px;
