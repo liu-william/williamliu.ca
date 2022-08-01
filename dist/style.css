@@ -335,7 +335,7 @@ nav {
 }
 @media (min-width: 64em) {
   .hero-container {
-    height: calc(100vh - 206.6px - 6rem);
+    min-height: calc(100vh - 206.6px - 6rem);
     justify-content: center;
     row-gap: 5rem;
   }
@@ -348,7 +348,6 @@ nav {
   .hero-text-container {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
   }
 }
 
@@ -412,7 +411,7 @@ nav {
 @media (min-width: 64em) {
   .hero-stretch-container {
     height: 100%;
-    margin-top: 20rem;
+    margin-top: 5rem;
     margin-bottom: 15rem;
     display: flex;
     flex-direction: column;

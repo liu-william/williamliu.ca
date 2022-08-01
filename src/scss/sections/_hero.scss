@@ -6,7 +6,8 @@
     row-gap: 1rem;
 
     @include u.breakpoint(desktop) {
-        height: calc(100vh - 206.6px - 6rem);    // 2 rem for nav and 6 rem total for nav and hero
+        min-height: calc(100vh - 206.6px - 6rem);    // 2 rem for nav and 6 rem total for nav and hero
+        // height: 100vh;
         justify-content: center;
         row-gap: 5rem;
     }
@@ -18,7 +19,6 @@
     @include u.breakpoint(desktop) {
         display: flex;
         flex-direction: column;
-        row-gap: 2rem;
     }  
 }
 
@@ -30,7 +30,6 @@
 
     @include u.breakpoint(desktop) {
         padding-top: 5rem;
-        // row-gap: 3rem;
     }
 
     @include u.breakpoint(large-desktop) {
@@ -80,7 +79,7 @@
     
     @include u.breakpoint(desktop) {
         height: 100%;
-        margin-top: 20rem;
+        margin-top: 5rem;
         margin-bottom: 15rem;
         display: flex;
         flex-direction: column;
