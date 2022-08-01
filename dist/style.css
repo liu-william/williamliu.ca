@@ -327,12 +327,13 @@ nav {
   flex-direction: column;
   row-gap: 1rem;
 }
-@media (min-width: 48em) {
+@media (min-width: 64em) {
   .hero-container {
-    flex-direction: row;
-    row-gap: 0;
-    justify-content: space-evenly;
-    align-items: center;
+    height: calc(100vh - 206.6px - 6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5rem;
   }
 }
 
@@ -346,7 +347,7 @@ nav {
   row-gap: 1rem;
   justify-content: center;
 }
-@media (min-width: 48em) {
+@media (min-width: 75em) {
   .hero-socials {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -361,6 +362,12 @@ nav {
 }
 @media (min-width: 48em) {
   .hero-socials-container {
+    justify-content: space-around;
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 75em) {
+  .hero-socials-container {
     flex-direction: column;
     justify-content: space-between;
   }
@@ -370,12 +377,21 @@ nav {
   text-align: center;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 75em) {
   .hero-socials-text {
     -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
     text-orientation: upright;
   }
+}
+
+.hero-stretch-container {
+  height: 100%;
+  margin-bottom: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 3rem;
 }
 
 .about-me-container {
