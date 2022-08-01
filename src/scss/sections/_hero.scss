@@ -70,10 +70,14 @@
 }
 
 .hero-stretch-container {
-    height: 100%;
-    margin-bottom: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 3rem;
+    
+    @include u.breakpoint(desktop) {
+        height: 100%;
+        margin-bottom: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 3rem;
+    }  
+
 }
