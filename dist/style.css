@@ -211,6 +211,7 @@ nav {
   .nav-container {
     flex-direction: row;
     width: 100%;
+    align-items: center;
   }
 }
 

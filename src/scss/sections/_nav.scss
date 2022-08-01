@@ -59,6 +59,7 @@ nav {
     @include u.breakpoint(desktop) {
         flex-direction: row;
         width: 100%;
+        align-items: center;
     }
 }
 
