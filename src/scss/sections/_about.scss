@@ -13,7 +13,7 @@
     }
 
     @include u.breakpoint(desktop) {
-        height: 100vh;
+        min-height: 100vh;
         justify-content: space-evenly;
     }
 }
@@ -43,12 +43,12 @@
 
 .about-desc {
     @include u.breakpoint(desktop) {
-        font-size: 24px;
-        width: 480px;
+        font-size: 18px;
+        width: 540px;
     }
 
     @include u.breakpoint(large-desktop) {
-        font-size: 28px;
+        font-size: 24px;
         width: 650px;
     }
 }

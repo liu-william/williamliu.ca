@@ -442,7 +442,7 @@ nav {
 }
 @media (min-width: 64em) {
   .about-me-container {
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-evenly;
   }
 }
@@ -474,13 +474,13 @@ nav {
 
 @media (min-width: 64em) {
   .about-desc {
-    font-size: 24px;
-    width: 480px;
+    font-size: 18px;
+    width: 540px;
   }
 }
 @media (min-width: 75em) {
   .about-desc {
-    font-size: 28px;
+    font-size: 24px;
     width: 650px;
   }
 }
