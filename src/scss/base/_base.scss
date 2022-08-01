@@ -1,3 +1,5 @@
+@use "../utils/" as u;
+
 html {
     box-sizing: border-box;    // Padding and border added to will not alter final width/height set.
     font-size: 100%;    // ensure font size matches to def set on browser.
@@ -22,6 +24,10 @@ body {
 
 .section {
     margin: 1rem;
+
+    @include u.breakpoint(desktop) {
+        margin: 2rem;
+    }
 }
 
 .social-logo {

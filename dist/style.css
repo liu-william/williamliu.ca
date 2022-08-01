@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -22,6 +23,11 @@ body {
 
 .section {
   margin: 1rem;
+}
+@media (min-width: 64em) {
+  .section {
+    margin: 2rem;
+  }
 }
 
 .social-logo {
@@ -125,6 +131,8 @@ h6 {
 
 p {
   color: white;
+  font-family: "Roboto", "Arial";
+  font-weight: 300;
 }
 
 a,
@@ -211,6 +219,7 @@ nav {
   .nav-container {
     flex-direction: row;
     width: 100%;
+    align-items: center;
   }
 }
 
@@ -375,12 +384,29 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+@media (min-width: 64em) {
+  .about-me-container {
+    flex-direction: row;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    margin: 2rem;
+  }
+}
 
 .about-me-headshot {
   margin: 1rem;
   border-radius: 50%;
-  width: 270px;
-  height: 300px;
+  width: 300px;
+  height: 320px;
+}
+@media (min-width: 64em) {
+  .about-me-headshot {
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+  }
 }
 
 .projects-container {
@@ -418,15 +444,26 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 64em) {
+  .contacts-container {
+    flex-direction: row;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    justify-content: space-evenly;
+    margin: 4rem;
+  }
+}
 
-.contacts-card-container {
+.contacts-info-container {
   display: grid;
   grid-template-rows: 1fr;
   justify-content: center;
 }
 @media (min-width: 64em) {
-  .contacts-card-container {
-    gap: 0.5rem;
+  .contacts-info-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
   }
 }
 
@@ -443,15 +480,21 @@ nav {
 .contact-logo {
   width: 36px;
   height: 36px;
-  vertical-align: middle;
-  margin-right: 1.3rem;
 }
 
 .contact-info {
   font-size: 15px;
   color: white;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
 }
 
 .footer-container {
