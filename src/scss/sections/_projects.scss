@@ -28,6 +28,14 @@
         grid-template-rows: 25rem;   // simulation of card
         row-gap: 2rem;
     }
+
+    @include u.breakpoint(large-desktop) {
+        column-gap: 5rem;
+    }
+
+    @include u.breakpoint(monitor) {
+        column-gap: 6rem;
+    }
 }
 
 .project-card {
@@ -55,5 +63,10 @@
     @include u.breakpoint(large-desktop) {
         font-size: 24px;
         width: 950px;
+    }
+
+    @include u.breakpoint(monitor) {
+        font-size: 26px;
+        width: 1200px;
     }
 }

@@ -35,6 +35,24 @@ body {
   width: 32px;
   height: 32px;
 }
+@media (min-width: 64em) {
+  .social-logo {
+    width: 34px;
+    height: 34px;
+  }
+}
+@media (min-width: 75em) {
+  .social-logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (min-width: 90em) {
+  .social-logo {
+    width: 38px;
+    height: 38px;
+  }
+}
 
 .text-container {
   text-align: center;
@@ -297,6 +315,16 @@ nav {
     font-size: 18px;
   }
 }
+@media (min-width: 75em) {
+  .nav-item {
+    font-size: 20px;
+  }
+}
+@media (min-width: 90em) {
+  .nav-item {
+    font-size: 22px;
+  }
+}
 
 .nav-socials-container {
   display: flex;
@@ -484,6 +512,12 @@ nav {
     width: 650px;
   }
 }
+@media (min-width: 90em) {
+  .about-desc {
+    font-size: 26px;
+    width: 750px;
+  }
+}
 
 .projects-container {
   display: flex;
@@ -518,6 +552,18 @@ nav {
     row-gap: 2rem;
   }
 }
+@media (min-width: 75em) {
+  .projects-card-container {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+}
+@media (min-width: 90em) {
+  .projects-card-container {
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
+}
 
 .project-card {
   height: 300px;
@@ -541,6 +587,12 @@ nav {
   .projects-desc {
     font-size: 24px;
     width: 950px;
+  }
+}
+@media (min-width: 90em) {
+  .projects-desc {
+    font-size: 26px;
+    width: 1200px;
   }
 }
 
@@ -568,8 +620,8 @@ nav {
 @media (min-width: 90em) {
   .contacts-container {
     margin: 0 10rem;
-    -moz-column-gap: 15rem;
-         column-gap: 15rem;
+    -moz-column-gap: 10rem;
+         column-gap: 10rem;
   }
 }
 
@@ -601,6 +653,30 @@ nav {
   width: 36px;
   height: 36px;
 }
+@media (min-width: 64em) {
+  .contact-logo {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (min-width: 75em) {
+  .contact-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 75em) {
+  .contact-logo {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (min-width: 90em) {
+  .contact-logo {
+    height: 44px;
+    width: 44px;
+  }
+}
 
 .contact-info {
   font-size: 16px;
@@ -609,6 +685,21 @@ nav {
   font-weight: 300;
   align-self: center;
   margin-left: 1rem;
+}
+@media (min-width: 64em) {
+  .contact-info {
+    font-size: 18px;
+  }
+}
+@media (min-width: 75em) {
+  .contact-info {
+    font-size: 20px;
+  }
+}
+@media (min-width: 90em) {
+  .contact-info {
+    font-size: 22px;
+  }
 }
 
 .contact-card {
@@ -633,6 +724,12 @@ nav {
   .contacts-desc {
     font-size: 22px;
     width: 700px;
+  }
+}
+@media (min-width: 90em) {
+  .contacts-desc {
+    font-size: 24px;
+    width: 750px;
   }
 }
 

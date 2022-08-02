@@ -19,7 +19,7 @@
 
     @include u.breakpoint(monitor) {
         margin: 0 10rem;
-        column-gap: 15rem;
+        column-gap: 10rem;
     }
 }
         
@@ -48,6 +48,26 @@
 .contact-logo {
     width: 36px;
     height: 36px;
+
+    @include u.breakpoint(desktop) {
+        width: 38px;
+        height: 38px;
+    }
+
+    @include u.breakpoint(large-desktop) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include u.breakpoint(large-desktop) {
+        width: 42px;
+        height: 42px;
+    }
+
+    @include u.breakpoint(monitor) {
+        height: 44px;
+        width: 44px;
+    }
 }
                 
 .contact-info {
@@ -57,6 +77,18 @@
     font-weight: 300;
     align-self: center;
     margin-left: 1rem;
+
+    @include u.breakpoint(desktop) {
+        font-size: 18px;
+    }
+
+    @include u.breakpoint(large-desktop) {
+        font-size: 20px;
+    }
+
+    @include u.breakpoint(monitor) {
+        font-size: 22px;
+    }
 }
 
 .contact-card {
@@ -80,5 +112,10 @@
     @include u.breakpoint(large-desktop) {
         font-size: 22px;
         width: 700px;
+    }
+
+    @include u.breakpoint(monitor) {
+        font-size: 24px;
+        width: 750px;
     }
 }
