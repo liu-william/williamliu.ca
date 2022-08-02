@@ -64,3 +64,9 @@
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
 }
+
+.contact-text {
+    @include u.breakpoint(desktop) {
+        margin-bottom: 5rem;
+    }
+}

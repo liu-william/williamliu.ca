@@ -493,7 +493,7 @@ nav {
 }
 @media (min-width: 64em) {
   .projects-container {
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-evenly;
   }
 }
@@ -529,12 +529,6 @@ nav {
 }
 .project-card p {
   text-align: center;
-}
-
-@media (min-width: 64em) {
-  .text-container {
-    margin-bottom: 5rem;
-  }
 }
 
 .contacts-container {
@@ -608,6 +602,12 @@ nav {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr;
+}
+
+@media (min-width: 64em) {
+  .contact-text {
+    margin-bottom: 5rem;
+  }
 }
 
 .footer-container {
