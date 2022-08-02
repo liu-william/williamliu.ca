@@ -48,7 +48,12 @@
 
 .projects-desc {
     @include u.breakpoint(desktop) {
-        font-size: 22px;
+        font-size: 20px;
         width: 750px;
+    }
+
+    @include u.breakpoint(large-desktop) {
+        font-size: 24px;
+        width: 950px;
     }
 }

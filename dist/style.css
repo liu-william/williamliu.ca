@@ -533,8 +533,14 @@ nav {
 
 @media (min-width: 64em) {
   .projects-desc {
-    font-size: 22px;
+    font-size: 20px;
     width: 750px;
+  }
+}
+@media (min-width: 75em) {
+  .projects-desc {
+    font-size: 24px;
+    width: 950px;
   }
 }
 
@@ -619,8 +625,14 @@ nav {
 
 @media (min-width: 64em) {
   .contacts-desc {
-    font-size: 22px;
+    font-size: 20px;
     width: 600px;
+  }
+}
+@media (min-width: 75em) {
+  .contacts-desc {
+    font-size: 22px;
+    width: 700px;
   }
 }
 
