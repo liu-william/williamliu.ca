@@ -488,7 +488,7 @@ nav {
 .projects-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding-bottom: 2rem;
 }
 @media (min-width: 64em) {
@@ -501,7 +501,7 @@ nav {
 .projects-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
-  justify-content: center;
+  align-content: center;
   row-gap: 2rem;
   margin-top: 2rem;
 }
@@ -529,6 +529,19 @@ nav {
 }
 .project-card p {
   text-align: center;
+}
+
+@media (min-width: 64em) {
+  .projects-desc {
+    font-size: 20px;
+    width: 750px;
+  }
+}
+@media (min-width: 75em) {
+  .projects-desc {
+    font-size: 24px;
+    width: 950px;
+  }
 }
 
 .contacts-container {
@@ -605,8 +618,21 @@ nav {
 }
 
 @media (min-width: 64em) {
-  .contact-text {
+  .contacts-text {
     margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .contacts-desc {
+    font-size: 20px;
+    width: 600px;
+  }
+}
+@media (min-width: 75em) {
+  .contacts-desc {
+    font-size: 22px;
+    width: 700px;
   }
 }
 

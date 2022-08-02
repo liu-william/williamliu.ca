@@ -65,8 +65,20 @@
     grid-template-rows: 1fr;
 }
 
-.contact-text {
+.contacts-text {
     @include u.breakpoint(desktop) {
         margin-bottom: 5rem;
+    }
+}
+
+.contacts-desc {
+    @include u.breakpoint(desktop) {
+        font-size: 20px;
+        width: 600px;
+    }
+
+    @include u.breakpoint(large-desktop) {
+        font-size: 22px;
+        width: 700px;
     }
 }

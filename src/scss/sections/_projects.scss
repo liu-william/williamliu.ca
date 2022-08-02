@@ -3,7 +3,7 @@
 .projects-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     padding-bottom: 2rem;
 
     @include u.breakpoint(desktop) {
@@ -15,7 +15,7 @@
 .projects-card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 20rem);
-    justify-content: center;
+    align-content: center;
     row-gap: 2rem;
     margin-top: 2rem;
 
@@ -42,5 +42,18 @@
 
     p {
         text-align: center;
+    }
+}
+
+
+.projects-desc {
+    @include u.breakpoint(desktop) {
+        font-size: 20px;
+        width: 750px;
+    }
+
+    @include u.breakpoint(large-desktop) {
+        font-size: 24px;
+        width: 950px;
     }
 }
