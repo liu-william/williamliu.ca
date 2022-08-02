@@ -7,7 +7,7 @@
     padding-bottom: 2rem;
 
     @include u.breakpoint(desktop) {
-        height: 100vh;
+        min-height: 100vh;
         justify-content: space-evenly;
     }
 }
@@ -42,15 +42,5 @@
 
     p {
         text-align: center;
-    }
-}
-
-// .projects-desc {
-//     margin: 2rem 0;
-// }
-
-.text-container {
-    @include u.breakpoint(desktop) {
-        margin-bottom: 5rem;
     }
 }
