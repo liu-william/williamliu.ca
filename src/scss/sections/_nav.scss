@@ -1,7 +1,24 @@
 @use "../utils" as u;
 
-nav.show {
-    display: block;
+.navigation {
+    @include u.breakpoint(desktop) {
+        // background-color: #ffffff30;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+.scroll {
+
+    background-color: transparent;
+
+    @include u.breakpoint(desktop) {
+        background-color: #132c3dde;
+        z-index: 9999;
+        transition: background-color 250ms ease-in;
+    }
 }
 
 .nav-logos-wrapper {
@@ -40,6 +57,10 @@ nav {
     z-index: 999;    // for pos abs or fixed (high to sit on top of everything)
     padding: 3rem 1rem;
     background: var(--dark-yellow);
+
+    &.show {
+        display: block;
+    }
 
     @include u.breakpoint(desktop) {
         background: var(--coral);
@@ -118,25 +139,31 @@ nav {
     margin-bottom: 4rem;
     font-size: 24px;
 
-    &:hover {
-        font-weight: 600;
-    }
-
     @include u.breakpoint(desktop) {
         color: var(--dark-yellow);
         text-transform: uppercase;
         font-size: 18px;
-        // get rid of hower effect
+        margin-bottom: 0;
+        padding-bottom: 0.8rem;
+        border-bottom: 5px solid transparent;
+
+        &.active {
+            border-bottom: 5px solid var(--coral);
+            transition: 30ms;
+        }
+    
+        &:hover {
+            border-bottom: 5px solid var(--coral);
+            transition: 250ms ease-out;
+        }
     }
 
     @include u.breakpoint(large-desktop) {
         font-size: 20px;
-        // get rid of hower effect
     }
 
     @include u.breakpoint(monitor) {
         font-size: 22px;
-        // get rid of hower effect
     }
 }
 
@@ -153,18 +180,31 @@ nav {
     border: solid var(--coral) 1.5px;
     border-radius: 18px;
     padding: 0.69rem 0.5rem;
+    
+    @include u.breakpoint(desktop) {
+        &:hover {
+            color: var(--light-yellow);
+            border-bottom: solid var(--coral) 1.5px;
+        }    
+    }
 }
 
 .top-nav-container {
+
+    padding-top: 2rem;
+
     @include u.breakpoint(desktop) {
-        padding: 0 3rem;
+        padding-top: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
 
     @include u.breakpoint(large-desktop) {
-        padding: 0 6rem;
+        padding-left: 6rem;
+        padding-right: 6rem;    
     }
 }
 

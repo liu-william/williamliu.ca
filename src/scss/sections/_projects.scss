@@ -7,43 +7,79 @@
     padding-bottom: 2rem;
 
     @include u.breakpoint(desktop) {
-        min-height: 100vh;
+        display: flex;
+        min-height: var(--min-height);
         justify-content: space-evenly;
+        padding-bottom: 0;
     }
 }
 
 .projects-card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
-    align-content: center;
+    display: flex;
+    flex-direction: column;
     row-gap: 2rem;
-    margin-top: 2rem;
-
-    @include u.breakpoint(tablet) {
-        column-gap: 2rem;
-    }
+    margin-top: 1rem;
 
     @include u.breakpoint(desktop) {
-        grid-template-columns: repeat(3, 18rem);
-        grid-template-rows: 25rem;   // simulation of card
-        row-gap: 2rem;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     @include u.breakpoint(large-desktop) {
-        column-gap: 5rem;
+        column-gap: 2rem;
     }
 
     @include u.breakpoint(monitor) {
-        column-gap: 6rem;
+        column-gap: 4rem;
     }
 }
 
 .project-card {
-    // width: 300px;
-    height: 300px;
+    // width: calc(100vw - 10rem);
+    width: 300px;
+    height: 360px;
     border-radius: 8%;
-    box-shadow: 3px 2px 8px var(--dark-yellow);
+    background-color: #375A7F;
+    // box-shadow: 3px 2px 8px var(--dark-yellow);
+    // border: 1px solid #37c3ff;
+    margin: 0 1rem;
+    opacity: 0;
+    transition: 500ms;
 
+    &__anim1 {
+
+        transform: translateX(-30px);
+
+        @include u.breakpoint(desktop) {
+            transform: translate(0, 120px);
+        }
+    }
+
+    &__anim2 {
+
+        transform: translateX(30px);
+
+        @include u.breakpoint(desktop) {
+            transform: translate(0, 100px);
+        }
+    }
+
+    &.show {
+        transform: translate(0px);
+        opacity: 1;
+    }
+
+    &__header {
+        color: #24292e;
+        font-family: "Lato", "Montserrat";
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    // :hover {
+    //     box-shadow: 2px 2px 2px 2px var(--dark-yellow);
+    // }
+    
     h3 {
         text-align: center;
     }
@@ -51,22 +87,35 @@
     p {
         text-align: center;
     }
-}
 
+    @include u.breakpoint(laptop) {
+    }
+    
+    @include u.breakpoint(desktop) {
+        margin: 0 1rem;
+    }
+
+    @include u.breakpoint(large-desktop) {
+    }
+
+    @include u.breakpoint(monitor) {
+    }
+
+}
 
 .projects-desc {
     @include u.breakpoint(desktop) {
         font-size: 20px;
-        width: 750px;
+        width: 900px;
     }
 
     @include u.breakpoint(large-desktop) {
-        font-size: 24px;
-        width: 950px;
+        font-size: 22px;
+        width: 1050px;
     }
 
     @include u.breakpoint(monitor) {
-        font-size: 26px;
-        width: 1200px;
+        font-size: 22px;
+        width: 1250px;
     }
 }

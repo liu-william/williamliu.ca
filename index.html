@@ -10,7 +10,7 @@
 
     <body>
         <!-- NAVIGATION -->
-        <header class="section">
+        <header class="navigation" id="nav-desktop">
             <div class="top-nav-container">
                 <div class="nav-logos-wrapper">
                     <a href="index.html""><img src="src/imgs/logos/william'sLogo.svg" alt="William's logo" title="Home" class="personal-logo"></a>
@@ -22,13 +22,13 @@
                         <img src="src/imgs/logos/menuExitLogo.svg" alt="Hamburger Exit" class="mobile-exit" id="mobile-exit-cta" >
                         <div class="nav-items-container">
                             <ul class="primary-nav">
-                                <li><a href="index.html" class="nav-item">Home</a></li>
+                                <li><a href="#home" class="nav-item active">Home</a></li>
                                 <li><a href="#about-me" class="nav-item">About Me</a></li>
                                 <li><a href="#projects" class="nav-item">Projects</a></li>
                                 <li><a href="#contact" class="nav-item">Contact</a></li>
                             </ul>   
                             <ul class="secondary-nav">
-                                <li><a href="docs/WilliamLiuResume.pdf" target=”_blank” class="button-resume nav-item">Resume</a></li>
+                                <li><a href="docs/WilliamLiuResume.pdf" target=”_blank” class="nav-item button-resume">Resume</a></li>
                             </ul>   
                             <div class="nav-socials-container">
                                 <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogoBlue.svg" alt="GitHub Logo" title="GitHub" class="social-logo"></a>
@@ -43,7 +43,7 @@
         </header>
 
         <!-- HERO -->
-        <section class="section">
+        <section class="section" id="home">
             <div class="hero-container">
                 <div class="hero-stretch-container">
                     <div class="hero-text-container">
@@ -67,25 +67,27 @@
         <!-- ABOUT -->
         <section class="section" id="about-me">
             <div class="about-me-container">
-                <img src="src/imgs/pics/William1.jpg" alt="William's Headshot1" class="about-me-headshot">
-                <div class="text-container">
-                    <h2>William Liu</h2>
-                    <p class="text-desc about-desc"> 
-                        Hi there! I'm William, a software developer and a CS student.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Quasi et mollitia necessitatibus dicta quas harum in. 
-                        Veniam maiores unde, dolor voluptate corrupti quam molestiae ab accusamus delectus quo atque consectetur!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eaque quibusdam quisquam voluptates voluptatibus.
-                        Cumque dolorem iusto pariatur quasi recusandae unde, culpa laborum totam nulla quod doloremque dignissimos cum tenetur?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum. 
-                        Adipisci omnis molestias eveniet accusamus dolorem architecto id.
-                        Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
-                        Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
-                        Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
-                        Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
-                        Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
-                        Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
-                    </p>
+                <div class="about-text-container">
+                    <img src="src/imgs/pics/William1.jpg" alt="William's Headshot1" class="about-me-headshot">
+                    <div class="text-container">
+                        <h2>William Liu</h2>
+                        <p class="text-desc about-desc"> 
+                            Hi there! I'm William, a software developer and a CS student.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Quasi et mollitia necessitatibus dicta quas harum in. 
+                            Veniam maiores unde, dolor voluptate corrupti quam molestiae ab accusamus delectus quo atque consectetur!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eaque quibusdam quisquam voluptates voluptatibus.
+                            Cumque dolorem iusto pariatur quasi recusandae unde, culpa laborum totam nulla quod doloremque dignissimos cum tenetur?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum. 
+                            Adipisci omnis molestias eveniet accusamus dolorem architecto id.
+                            Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
+                            Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
+                            Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
+                            Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
+                            Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
+                            Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -107,23 +109,34 @@
                         Ullam quas, beatae amet quae libero vitae dolor hic unde maiores reiciendis!
                     </p>
                 </div>
-                <div class="projects-card-container">
-                        <div class="project-card">
-                            <h3>Project1</h3>
+                <ul class="projects-card-container">
+                    <li class="project-card project-card__anim1">
+                        <!-- <img src="src/imgs/pics/William1.jpg" alt="QR-Score Picture"> -->
+                        <h3 class="project-card__header">QR Score</h3>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <p>1 fjdsakfjlksdajflsdfsfsdf</p>
+                    </li>
+                        <li class="project-card project-card__anim2">
+                            <!-- <img src="src/imgs/pics/William1.jpg" alt="QR-Score Picture"> -->
+                            <h3 class="project-card__header">QR Score</h3>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
                             <p>1 fjdsakfjlksdajflsdfsfsdf</p>
-                        </div>
-                        <div class="project-card">
-                            <h3>Project2</h3>
-                        </div>
-                        <div class="project-card">
-                            <h3>Project3</h3>
-                        </div>
-                </div>
+                        </li>
+                    <li class="project-card project-card__anim1">
+                        <!-- <img src="src/imgs/pics/William1.jpg" alt="QR-Score Picture"> -->
+                        <h3 class="project-card__header">QR Score</h3>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <p>1 fjdsakfjlksdajflsdfsfsdf</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- CONTACT -->
-        <section class="section" id="contact">
+        <section class="section contacts-section" id="contact">
             <div class="contacts-container">
                 <div class="text-container contacts-text">
                     <h1>Contact Me</h1>
