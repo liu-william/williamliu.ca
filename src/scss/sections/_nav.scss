@@ -1,17 +1,22 @@
 @use "../utils" as u;
 
 .navigation {
-    background-color: red;
     @include u.breakpoint(desktop) {
+        // background-color: #ffffff30;
         width: 100vw;
         position: fixed;
         top: 0;
         left: 0;
     }
 }
- 
-nav.show {
-    display: block;
+
+.scroll {
+    background-color: transparent;
+    @include u.breakpoint(desktop) {
+        background-color: #132c3dde;
+        z-index: 9999;
+        transition: background-color 250ms ease-in;
+    }
 }
 
 .nav-logos-wrapper {
@@ -50,6 +55,10 @@ nav {
     z-index: 999;    // for pos abs or fixed (high to sit on top of everything)
     padding: 3rem 1rem;
     background: var(--dark-yellow);
+
+    &.show {
+        display: block;
+    }
 
     @include u.breakpoint(desktop) {
         background: var(--coral);
@@ -164,6 +173,10 @@ nav {
     border: solid var(--coral) 1.5px;
     border-radius: 18px;
     padding: 0.69rem 0.5rem;
+
+    &:hover {
+        color: var(--light-yellow);
+    }
 }
 
 .top-nav-container {
