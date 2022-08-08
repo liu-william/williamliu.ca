@@ -1,19 +1,25 @@
 @use "../utils" as u;
 
 .about-me-container {
+    @include u.breakpoint(desktop) {
+        min-height: var(--min-height);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.about-text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
     @include u.breakpoint(desktop) {
+        height: 100%;
         flex-direction: row;
         column-gap: 3rem;
-        margin: 2rem;
-    }
-
-    @include u.breakpoint(desktop) {
-        min-height: 100vh;
+        margin-bottom: 2rem;
         justify-content: space-evenly;
     }
 }
@@ -42,18 +48,19 @@
 }
 
 .about-desc {
+
     @include u.breakpoint(desktop) {
         font-size: 18px;
         width: 540px;
     }
 
     @include u.breakpoint(large-desktop) {
-        font-size: 24px;
+        font-size: 22px;
         width: 650px;
     }
 
     @include u.breakpoint(monitor) {
-        font-size: 26px;
+        font-size: 24px;
         width: 750px;
     }
 }

@@ -1,5 +1,15 @@
 @use "../utils" as u;
 
+.contacts-section {
+
+    margin: 1rem;
+
+    @include u.breakpoint(desktop) {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
+
 .contacts-container {
     display: flex;
     flex-direction: column;

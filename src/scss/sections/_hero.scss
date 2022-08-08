@@ -6,8 +6,7 @@
     row-gap: 1rem;
 
     @include u.breakpoint(desktop) {
-        min-height: calc(100vh - 206.6px - 6rem);    // 2 rem for nav and 6 rem total for nav and hero
-        // height: 100vh;
+        min-height: var(--min-height);
         justify-content: center;
         row-gap: 5rem;
     }
@@ -79,8 +78,6 @@
     
     @include u.breakpoint(desktop) {
         height: 100%;
-        margin-top: 5rem;
-        margin-bottom: 15rem;
         display: flex;
         flex-direction: column;
         justify-content: center;

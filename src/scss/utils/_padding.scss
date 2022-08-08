@@ -1,3 +1,4 @@
 :root {
-    --nav-height: calc(142.08px + 2rem);
+    --nav-height: calc(142.08px + 1rem);
+    --min-height: calc(100vh - (var(--nav-height)));
 }

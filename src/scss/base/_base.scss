@@ -25,7 +25,9 @@ body {
     margin: 1rem;
 
     @include u.breakpoint(desktop) {
-        margin: 2rem;
+        padding-top: var(--nav-height);
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
 }
 

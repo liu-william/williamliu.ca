@@ -1,5 +1,15 @@
 @use "../utils" as u;
 
+.navigation {
+    background-color: red;
+    @include u.breakpoint(desktop) {
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+ 
 nav.show {
     display: block;
 }
@@ -126,6 +136,7 @@ nav {
         color: var(--dark-yellow);
         text-transform: uppercase;
         font-size: 18px;
+        margin-bottom: 0;
         // get rid of hower effect
     }
 
@@ -156,16 +167,21 @@ nav {
 }
 
 .top-nav-container {
+
+    padding-top: 2rem;
+
     @include u.breakpoint(desktop) {
-        padding: 0 3rem;
+        padding-top: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
 
     @include u.breakpoint(large-desktop) {
-        padding: 0 6rem;
-    }
+        padding-left: 6rem;
+        padding-right: 6rem;    }
 }
 
 // header {
