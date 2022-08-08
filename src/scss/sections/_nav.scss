@@ -11,7 +11,9 @@
 }
 
 .scroll {
+
     background-color: transparent;
+
     @include u.breakpoint(desktop) {
         background-color: #132c3dde;
         z-index: 9999;
@@ -137,26 +139,31 @@ nav {
     margin-bottom: 4rem;
     font-size: 24px;
 
-    &:hover {
-        font-weight: 600;
-    }
-
     @include u.breakpoint(desktop) {
         color: var(--dark-yellow);
         text-transform: uppercase;
         font-size: 18px;
         margin-bottom: 0;
-        // get rid of hower effect
+        padding-bottom: 0.8rem;
+        border-bottom: 5px solid transparent;
+
+        &.active {
+            border-bottom: 5px solid var(--coral);
+            transition: 30ms;
+        }
+    
+        &:hover {
+            border-bottom: 5px solid var(--coral);
+            transition: 250ms ease-out;
+        }
     }
 
     @include u.breakpoint(large-desktop) {
         font-size: 20px;
-        // get rid of hower effect
     }
 
     @include u.breakpoint(monitor) {
         font-size: 22px;
-        // get rid of hower effect
     }
 }
 
@@ -173,9 +180,12 @@ nav {
     border: solid var(--coral) 1.5px;
     border-radius: 18px;
     padding: 0.69rem 0.5rem;
-
-    &:hover {
-        color: var(--light-yellow);
+    
+    @include u.breakpoint(desktop) {
+        &:hover {
+            color: var(--light-yellow);
+            border-bottom: solid var(--coral) 1.5px;
+        }    
     }
 }
 
@@ -194,7 +204,8 @@ nav {
 
     @include u.breakpoint(large-desktop) {
         padding-left: 6rem;
-        padding-right: 6rem;    }
+        padding-right: 6rem;    
+    }
 }
 
 // header {

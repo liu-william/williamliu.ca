@@ -47,15 +47,20 @@
     transition: 500ms;
 
     &__anim1 {
+
         transform: translateX(-30px);
+
         @include u.breakpoint(desktop) {
-            transform: translate(0, 225px);
+            transform: translate(0, 120px);
         }
     }
 
     &__anim2 {
+
+        transform: translateX(30px);
+
         @include u.breakpoint(desktop) {
-            transform: translate(0, 175px);
+            transform: translate(0, 100px);
         }
     }
 

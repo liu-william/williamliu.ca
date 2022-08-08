@@ -331,15 +331,22 @@ nav.show {
   margin-bottom: 4rem;
   font-size: 24px;
 }
-.nav-item:hover {
-  font-weight: 600;
-}
 @media (min-width: 64em) {
   .nav-item {
     color: var(--dark-yellow);
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 0;
+    padding-bottom: 0.8rem;
+    border-bottom: 5px solid transparent;
+  }
+  .nav-item.active {
+    border-bottom: 5px solid var(--coral);
+    transition: 30ms;
+  }
+  .nav-item:hover {
+    border-bottom: 5px solid var(--coral);
+    transition: 250ms ease-out;
   }
 }
 @media (min-width: 75em) {
@@ -368,8 +375,11 @@ nav.show {
   border-radius: 18px;
   padding: 0.69rem 0.5rem;
 }
-.button-resume:hover {
-  color: var(--light-yellow);
+@media (min-width: 64em) {
+  .button-resume:hover {
+    color: var(--light-yellow);
+    border-bottom: solid var(--coral) 1.5px;
+  }
 }
 
 .top-nav-container {
@@ -612,12 +622,15 @@ nav.show {
 }
 @media (min-width: 64em) {
   .project-card__anim1 {
-    transform: translate(0, 225px);
+    transform: translate(0, 120px);
   }
+}
+.project-card__anim2 {
+  transform: translateX(30px);
 }
 @media (min-width: 64em) {
   .project-card__anim2 {
-    transform: translate(0, 175px);
+    transform: translate(0, 100px);
   }
 }
 .project-card.show {
@@ -666,6 +679,7 @@ nav.show {
 @media (min-width: 64em) {
   .contacts-section {
     margin: 0;
+    padding-top: 0;
   }
 }
 
