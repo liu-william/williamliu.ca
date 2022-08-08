@@ -624,8 +624,7 @@ nav {
 }
 @media (min-width: 64em) {
   .contacts-section {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin: 0;
   }
 }
 
@@ -645,14 +644,14 @@ nav {
 }
 @media (min-width: 75em) {
   .contacts-container {
-    margin: 0 5rem;
+    margin: 4rem 5rem;
     -moz-column-gap: 5rem;
          column-gap: 5rem;
   }
 }
 @media (min-width: 90em) {
   .contacts-container {
-    margin: 0 10rem;
+    margin: 4rem 10rem;
     -moz-column-gap: 10rem;
          column-gap: 10rem;
   }
