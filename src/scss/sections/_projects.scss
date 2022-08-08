@@ -49,6 +49,11 @@
         flex-shrink: 0;
         scroll-snap-align: start;
     }
+
+    @include u.breakpoint(desktop) {
+        scroll-snap-type: none;
+        scroll-padding: 0;
+    }
 }
 
 
@@ -59,9 +64,9 @@
     border-radius: 8%;
     // box-shadow: 3px 2px 8px var(--dark-yellow);
     // border: 1px solid #37c3ff;
-    margin-right: 2rem;
+    margin: 0 1rem;
 
-    background-color: #375a7f;
+    background-color: #375A7F;
 
     &__header {
         color: #24292e;
@@ -83,9 +88,28 @@
     }
 
     @include u.breakpoint(laptop) {
+        width: 400px;
+        height: 400px;
+    }
+    
+    @include u.breakpoint(desktop) {
         width: 300px;
         height: 300px;
+        margin: 0 1rem;
     }
+
+    @include u.breakpoint(large-desktop) {
+        width: 325px;
+        height: 325px;
+        margin: 0 2rem;
+    }
+
+    @include u.breakpoint(monitor) {
+        width: 350px;
+        height: 350px;
+        margin: 0 3rem;
+    }
+
 }
 
 
