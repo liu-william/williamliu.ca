@@ -1,8 +1,8 @@
 @use "../utils" as u;
 
 .projects-container {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     align-items: center;
     padding-bottom: 2rem;
 
@@ -12,38 +12,66 @@
     }
 }
 
+// .projects-card-container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, 20rem);
+//     align-content: center;
+//     row-gap: 2rem;
+//     margin-top: 2rem;
+
+//     @include u.breakpoint(tablet) {
+//         column-gap: 2rem;
+//     }
+
+//     @include u.breakpoint(desktop) {
+//         grid-template-columns: repeat(3, 18rem);
+//         grid-template-rows: 25rem;   // simulation of card
+//         row-gap: 2rem;
+//     }
+
+//     @include u.breakpoint(large-desktop) {
+//         column-gap: 5rem;
+//     }
+
+//     @include u.breakpoint(monitor) {
+//         column-gap: 6rem;
+//     }
+// }
+
 .projects-card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
-    align-content: center;
-    row-gap: 2rem;
-    margin-top: 2rem;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 24px;
 
-    @include u.breakpoint(tablet) {
-        column-gap: 2rem;
-    }
-
-    @include u.breakpoint(desktop) {
-        grid-template-columns: repeat(3, 18rem);
-        grid-template-rows: 25rem;   // simulation of card
-        row-gap: 2rem;
-    }
-
-    @include u.breakpoint(large-desktop) {
-        column-gap: 5rem;
-    }
-
-    @include u.breakpoint(monitor) {
-        column-gap: 6rem;
+    .project-card {
+        flex-shrink: 0;
+        scroll-snap-align: start;
     }
 }
 
+
 .project-card {
-    // width: 300px;
+    width: calc(100vw - 10rem);
     height: 300px;
     border-radius: 8%;
-    box-shadow: 3px 2px 8px var(--dark-yellow);
+    // box-shadow: 3px 2px 8px var(--dark-yellow);
+    // border: 1px solid #37c3ff;
+    margin-right: 2rem;
 
+    background-color: #375a7f;
+
+    &__header {
+        color: #24292e;
+        font-family: "Lato", "Montserrat";
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    // :hover {
+    //     box-shadow: 2px 2px 2px 2px var(--dark-yellow);
+    // }
+    
     h3 {
         text-align: center;
     }
