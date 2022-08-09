@@ -92,7 +92,7 @@
 
 .hero-logo__anim {
     opacity: 0.5;
-    transition: 1.5s ease-out;
+    transition: 1.2s ease-out;
     transform: translateY(45px);
 
     @include u.breakpoint(desktop) {
