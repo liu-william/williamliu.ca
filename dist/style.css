@@ -345,7 +345,7 @@ nav.show {
   }
   .nav-item:hover {
     border-bottom: 5px solid var(--coral);
-    transition: 250ms ease-out;
+    transition: 250ms linear;
   }
 }
 @media (min-width: 75em) {
