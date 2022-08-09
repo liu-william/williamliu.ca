@@ -9,15 +9,22 @@ const navItems = document.querySelectorAll(".nav-item")
 const socials = document.querySelectorAll(".hero-logo__anim")
 const heroTexts = document.querySelectorAll(".hero-text__anim")
 const aboutTexts = document.querySelectorAll(".about__anim,.about__anim2")
+const navItemsAnim = document.querySelectorAll(".nav-item__anim")
 
 seamless.polyfill();
 
 mobileMenuBtn.addEventListener("click", () => {
     mobileNav.classList.add("show")
+    navItemsAnim.forEach(item => {
+        item.classList.add("show")
+    })
 })
 
 mobileExitBtn.addEventListener("click", () => {
     mobileNav.classList.remove("show")
+    navItemsAnim.forEach(item => {
+        item.classList.remove("show")
+    })
 })
 
 navLinks.forEach(anchor => {

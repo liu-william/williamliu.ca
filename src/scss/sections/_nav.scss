@@ -181,8 +181,17 @@ nav {
     @include u.breakpoint(monitor) {
         font-size: 22px;
     }
+}
 
+.nav-item__anim {
+    opacity: 1;
+    transition: 400ms ease-in; 
+    transform: translateY(-800px);
 
+    &.show {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .nav-socials-container {
