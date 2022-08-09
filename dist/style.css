@@ -239,8 +239,9 @@ li {
 }
 
 nav {
-  display: none;
+  visibility: hidden;
   position: fixed;
+  opacity: 0;
   top: 0;
   right: 0;
   width: 100%;
@@ -248,13 +249,14 @@ nav {
   z-index: 9999;
   padding: 4rem 1rem;
   background: var(--dark-yellow);
+  transition: 69ms ease-in;
 }
 nav.show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 @media (min-width: 64em) {
   nav {
-    background: var(--coral);
     display: flex;
     background: none;
     position: unset;
@@ -332,8 +334,13 @@ nav.show {
   color: var(--background-blue);
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   font-size: 24px;
+}
+@media (min-width: 30em) {
+  .nav-item {
+    margin-bottom: 4rem;
+  }
 }
 @media (min-width: 64em) {
   .nav-item {

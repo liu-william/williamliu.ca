@@ -55,9 +55,9 @@
 } 
 
 nav {
-    display: none;    // Initially
-
+    visibility: hidden;    // Initially
     position: fixed;
+    opacity: 0;
     top: 0;
     right: 0;
     width: 100%;
@@ -66,12 +66,14 @@ nav {
     padding: 4rem 1rem;
     background: var(--dark-yellow);
 
+    transition: 69ms ease-in;
+
     &.show {
-        display: block;
+        visibility: visible;
+        opacity: 1;
     }
 
     @include u.breakpoint(desktop) {
-        background: var(--coral);
         display: flex;
         background: none;
         position: unset;
@@ -144,8 +146,12 @@ nav {
     color: var(--background-blue);
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     font-size: 24px;
+
+    @include u.breakpoint(tablet) {
+        margin-bottom: 4rem;
+    }
 
     @include u.breakpoint(desktop) {
         color: var(--dark-yellow);
