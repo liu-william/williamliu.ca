@@ -89,3 +89,36 @@
         align-items: center;
     }
 }
+
+.hero-logo__anim {
+    opacity: 0.5;
+    transition: 500ms ease-out;
+    transform: translateY(45px);
+
+    @include u.breakpoint(desktop) {
+        transform: translateX(45px);
+        transition: 600ms ease-out;
+    }  
+
+    &.show {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.hero-text__anim {
+    opacity: 0.5;
+    transition: 200ms ease-in;
+    transform: translateY(-45px);
+
+    @include u.breakpoint(desktop) {
+        transform: translateX(-80px);
+        transition: 250ms ease-in;
+        opacity: 0.5;
+    }  
+
+    &.show {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}

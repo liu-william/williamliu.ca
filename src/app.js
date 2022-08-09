@@ -8,6 +8,8 @@ const desktopNav = document.getElementById("nav-desktop")
 const projectCards = document.querySelectorAll(".project-card")
 const sections = document.querySelectorAll(".section")
 const navItems = document.querySelectorAll(".nav-item")
+const socials = document.querySelectorAll(".hero-logo__anim")
+const heroTexts = document.querySelectorAll(".hero-text__anim")
 
 seamless.polyfill();
 
@@ -51,13 +53,32 @@ window.onscroll = function() {
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) {
+            observer.unobserve(entry.target)
+        }
+    })
+}, {
+    threshold: 1,
+})
+
+socials.forEach(social => {
+    observer.observe(social)
+})
+
+heroTexts.forEach(text => {
+    observer.observe(text)
+})
+
+const projectObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
     })
 }, {
     threshold: 0.4,
 })
 
 projectCards.forEach(card => {
-    observer.observe(card)
+    projectObserver.observe(card)
 })
 
 window.addEventListener("scroll", () => {
