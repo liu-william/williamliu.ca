@@ -74,6 +74,8 @@ nav {
     }
 
     @include u.breakpoint(desktop) {
+        opacity: 1;
+        visibility: visible;
         display: flex;
         background: none;
         position: unset;
@@ -179,6 +181,8 @@ nav {
     @include u.breakpoint(monitor) {
         font-size: 22px;
     }
+
+
 }
 
 .nav-socials-container {

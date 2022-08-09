@@ -257,6 +257,8 @@ nav.show {
 }
 @media (min-width: 64em) {
   nav {
+    opacity: 1;
+    visibility: visible;
     display: flex;
     background: none;
     position: unset;
