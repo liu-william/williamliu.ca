@@ -1,5 +1,3 @@
-// import {polyfill} from "seamless-scroll-polyfill";    // For safari scrollIntoView smooth behaviour
-
 const mobileMenuBtn = document.getElementById("mobile-menu-cta")
 const mobileExitBtn = document.getElementById("mobile-exit-cta")
 const mobileNav = document.querySelector("nav")
@@ -10,6 +8,7 @@ const sections = document.querySelectorAll(".section")
 const navItems = document.querySelectorAll(".nav-item")
 const socials = document.querySelectorAll(".hero-logo__anim")
 const heroTexts = document.querySelectorAll(".hero-text__anim")
+const aboutTexts = document.querySelectorAll(".about__anim,.about__anim2")
 
 seamless.polyfill();
 
@@ -27,15 +26,10 @@ navLinks.forEach(anchor => {
 
         e.preventDefault();    // Resets def (anchor tags)
 
-        // Go to section smoothly by getting href
-        // document.querySelector(this.getAttribute("href")).scrollIntoView({
-        //     behavior: "smooth"
-        // });
-
         seamless.scrollIntoView(document.querySelector(this.getAttribute("href")), {
             behavior: "smooth",
-            // block: "center",
-            // inline: "center",
+            block: "center",
+            inline: "center",
         });
     });
 });
@@ -50,11 +44,11 @@ window.onscroll = function() {
         }
     };
 
-const observer = new IntersectionObserver(entries => {
+const fullObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
         if (entry.isIntersecting) {
-            observer.unobserve(entry.target)
+            fullObserver.unobserve(entry.target)
         }
     })
 }, {
@@ -62,12 +56,28 @@ const observer = new IntersectionObserver(entries => {
 })
 
 socials.forEach(social => {
-    observer.observe(social)
+    fullObserver.observe(social)
 })
 
 heroTexts.forEach(text => {
-    observer.observe(text)
+    fullObserver.observe(text)
 })
+
+const quarterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) {
+            quarterObserver.unobserve(entry.target)
+        }
+    })
+}, {
+    threshold: 0.25,
+})
+
+aboutTexts.forEach(text => {
+    quarterObserver.observe(text)
+})
+// quarterObserver.observe(aboutText)
 
 const projectObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {

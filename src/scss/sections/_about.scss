@@ -64,3 +64,32 @@
         width: 750px;
     }
 }
+
+.about__anim {
+    opacity: 0;
+    transition: 300ms ease-in;
+    transform: translateY(80px);
+
+    @include u.breakpoint(desktop) {
+        transition: 600ms ease-in;
+        transform: translateX(100px);
+    }
+
+    &.show {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.about__anim2 {
+    @include u.breakpoint(desktop) {
+        opacity: 0;
+        transition: 600ms ease-in;
+        transform: translateX(-100px);
+    }
+
+    &.show {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

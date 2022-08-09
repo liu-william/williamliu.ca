@@ -511,7 +511,7 @@ nav.show {
   transition: 1.2s ease-out;
   transform: translateY(45px);
 }
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   .hero-logo__anim {
     transform: translateX(45px);
     transition: 1s ease-out;
@@ -527,7 +527,7 @@ nav.show {
   transition: 300ms ease-in;
   transform: translateY(-45px);
 }
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   .hero-text__anim {
     transform: translateX(-80px);
     transition: 400ms ease-in;
@@ -607,6 +607,34 @@ nav.show {
     font-size: 24px;
     width: 750px;
   }
+}
+
+.about__anim {
+  opacity: 0;
+  transition: 300ms ease-in;
+  transform: translateY(80px);
+}
+@media (min-width: 64em) {
+  .about__anim {
+    transition: 600ms ease-in;
+    transform: translateX(100px);
+  }
+}
+.about__anim.show {
+  opacity: 1;
+  transform: translate(0);
+}
+
+@media (min-width: 64em) {
+  .about__anim2 {
+    opacity: 0;
+    transition: 600ms ease-in;
+    transform: translateX(-100px);
+  }
+}
+.about__anim2.show {
+  opacity: 1;
+  transform: translate(0);
 }
 
 .projects-container {
