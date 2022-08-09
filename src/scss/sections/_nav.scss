@@ -30,6 +30,14 @@
     height: 125px;
     width: 125px;
     align-self: center;
+    opacity: 0.95;
+
+    &:hover {
+        opacity: 1;
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+    }
 }
 
 .mobile-menu {
@@ -186,7 +194,6 @@ nav {
 
         &:hover {
             border-bottom: solid var(--coral) 1.5px;
-
             opacity: 1;
             -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);

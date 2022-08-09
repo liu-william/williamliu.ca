@@ -216,6 +216,11 @@ li {
   height: 125px;
   width: 125px;
   align-self: center;
+  opacity: 0.95;
+}
+.personal-logo:hover {
+  opacity: 1;
+  transform: scale(1.02);
 }
 
 .mobile-menu {
