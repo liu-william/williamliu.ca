@@ -95,7 +95,7 @@
     transition: 1.2s ease-out;
     transform: translateY(45px);
 
-    @include u.breakpoint(desktop) {
+    @include u.breakpoint(large-desktop) {
         transform: translateX(45px);
         transition: 1s ease-out;
     }  
@@ -111,7 +111,7 @@
     transition: 300ms ease-in;
     transform: translateY(-45px);
 
-    @include u.breakpoint(desktop) {
+    @include u.breakpoint(large-desktop) {
         transform: translateX(-80px);
         transition: 400ms ease-in;
         opacity: 0.5;
