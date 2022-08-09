@@ -1,3 +1,5 @@
+// import {polyfill} from "seamless-scroll-polyfill";    // For safari scrollIntoView smooth behaviour
+
 const mobileMenuBtn = document.getElementById("mobile-menu-cta")
 const mobileExitBtn = document.getElementById("mobile-exit-cta")
 const mobileNav = document.querySelector("nav")
@@ -6,6 +8,8 @@ const desktopNav = document.getElementById("nav-desktop")
 const projectCards = document.querySelectorAll(".project-card")
 const sections = document.querySelectorAll(".section")
 const navItems = document.querySelectorAll(".nav-item")
+
+seamless.polyfill();
 
 mobileMenuBtn.addEventListener("click", () => {
     mobileNav.classList.add("show")
@@ -22,8 +26,14 @@ navLinks.forEach(anchor => {
         e.preventDefault();    // Resets def (anchor tags)
 
         // Go to section smoothly by getting href
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
+        // document.querySelector(this.getAttribute("href")).scrollIntoView({
+        //     behavior: "smooth"
+        // });
+
+        seamless.scrollIntoView(document.querySelector(this.getAttribute("href")), {
+            behavior: "smooth",
+            // block: "center",
+            // inline: "center",
         });
     });
 });
@@ -76,3 +86,5 @@ window.addEventListener("scroll", () => {
         }
     })
 })
+
+// polyfill();
