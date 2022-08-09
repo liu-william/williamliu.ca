@@ -656,7 +656,7 @@ nav.show {
   background-color: #375A7F;
   margin: 0 1rem;
   opacity: 0;
-  transition: 250ms ease-in;
+  transition: 200ms ease-in;
 }
 .project-card__anim1 {
   transform: translateX(-30px);
