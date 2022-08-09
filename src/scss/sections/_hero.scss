@@ -91,7 +91,6 @@
 }
 
 .hero-logo__anim {
-    opacity: 0.5;
     transition: 1.2s ease-out;
     transform: translateY(45px);
 
@@ -102,19 +101,16 @@
 
     &.show {
         transform: translate(0px);
-        opacity: 1;
     }
 }
 
 .hero-text__anim {
-    opacity: 0.5;
     transition: 300ms ease-in;
     transform: translateY(-45px);
 
     @include u.breakpoint(large-desktop) {
         transform: translateX(-80px);
         transition: 400ms ease-in;
-        opacity: 0.5;
     }  
 
     &.show {

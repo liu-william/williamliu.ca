@@ -249,7 +249,7 @@ nav {
   z-index: 9999;
   padding: 4rem 1rem;
   background: var(--dark-yellow);
-  transition: 69ms ease-in;
+  transition: 69ms ease-in, visibility 0s;
 }
 nav.show {
   visibility: visible;
@@ -374,13 +374,16 @@ nav.show {
 }
 
 .nav-item__anim {
-  opacity: 1;
   transition: 400ms ease-in;
   transform: translateY(-800px);
 }
 .nav-item__anim.show {
-  opacity: 1;
   transform: translate(0);
+}
+@media (min-width: 64em) {
+  .nav-item__anim {
+    transform: translate(0);
+  }
 }
 
 .nav-socials-container {
@@ -526,7 +529,6 @@ nav.show {
 }
 
 .hero-logo__anim {
-  opacity: 0.5;
   transition: 1.2s ease-out;
   transform: translateY(45px);
 }
@@ -538,11 +540,9 @@ nav.show {
 }
 .hero-logo__anim.show {
   transform: translate(0px);
-  opacity: 1;
 }
 
 .hero-text__anim {
-  opacity: 0.5;
   transition: 300ms ease-in;
   transform: translateY(-45px);
 }
@@ -550,7 +550,6 @@ nav.show {
   .hero-text__anim {
     transform: translateX(-80px);
     transition: 400ms ease-in;
-    opacity: 0.5;
   }
 }
 .hero-text__anim.show {
