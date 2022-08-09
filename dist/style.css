@@ -414,7 +414,7 @@ nav.show {
     font-size: 18px;
     margin-bottom: 0;
     padding-bottom: 0.8rem;
-    border-bottom: 5px solid transparent;
+    border-bottom: 1px solid transparent;
   }
   .nav-item.active {
     border-bottom: 5px solid var(--coral);
