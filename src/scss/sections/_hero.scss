@@ -92,12 +92,12 @@
 
 .hero-logo__anim {
     opacity: 0.5;
-    transition: 500ms ease-out;
+    transition: 1.5s ease-out;
     transform: translateY(45px);
 
     @include u.breakpoint(desktop) {
         transform: translateX(45px);
-        transition: 600ms ease-out;
+        transition: 1s ease-out;
     }  
 
     &.show {
@@ -108,12 +108,12 @@
 
 .hero-text__anim {
     opacity: 0.5;
-    transition: 200ms ease-in;
+    transition: 300ms ease-in;
     transform: translateY(-45px);
 
     @include u.breakpoint(desktop) {
         transform: translateX(-80px);
-        transition: 250ms ease-in;
+        transition: 400ms ease-in;
         opacity: 0.5;
     }  
 

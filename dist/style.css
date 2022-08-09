@@ -508,13 +508,13 @@ nav.show {
 
 .hero-logo__anim {
   opacity: 0.5;
-  transition: 500ms ease-out;
+  transition: 1.5s ease-out;
   transform: translateY(45px);
 }
 @media (min-width: 64em) {
   .hero-logo__anim {
     transform: translateX(45px);
-    transition: 600ms ease-out;
+    transition: 1s ease-out;
   }
 }
 .hero-logo__anim.show {
@@ -524,13 +524,13 @@ nav.show {
 
 .hero-text__anim {
   opacity: 0.5;
-  transition: 200ms ease-in;
+  transition: 300ms ease-in;
   transform: translateY(-45px);
 }
 @media (min-width: 64em) {
   .hero-text__anim {
     transform: translateX(-80px);
-    transition: 250ms ease-in;
+    transition: 400ms ease-in;
     opacity: 0.5;
   }
 }
