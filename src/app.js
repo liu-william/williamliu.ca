@@ -15,6 +15,7 @@ seamless.polyfill();
 
 mobileMenuBtn.addEventListener("click", () => {
     mobileNav.classList.add("show")
+
     navItemsAnim.forEach(item => {
         item.classList.add("show")
     })
@@ -22,6 +23,7 @@ mobileMenuBtn.addEventListener("click", () => {
 
 mobileExitBtn.addEventListener("click", () => {
     mobileNav.classList.remove("show")
+
     navItemsAnim.forEach(item => {
         item.classList.remove("show")
     })

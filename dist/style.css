@@ -260,8 +260,6 @@ nav {
   z-index: 9999;
   padding: 4rem 1rem;
   background: var(--dark-yellow);
-  -webkit-transition: 69ms ease-in, visibility 0s;
-  transition: 69ms ease-in, visibility 0s;
 }
 nav.show {
   visibility: visible;
@@ -440,14 +438,18 @@ nav.show {
 }
 
 .nav-item__anim {
-  -webkit-transition: 400ms ease-in;
-  transition: 400ms ease-in;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
   -webkit-transform: translateY(-800px);
           transform: translateY(-800px);
 }
 .nav-item__anim.show {
   -webkit-transform: translate(0);
           transform: translate(0);
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 @media (min-width: 64em) {
   .nav-item__anim {
@@ -1152,8 +1154,8 @@ nav.show {
   right: 0;
   margin-bottom: 2rem;
   margin-right: 0.5rem;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   fill: #FAF0CA;
 }

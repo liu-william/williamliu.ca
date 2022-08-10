@@ -64,8 +64,6 @@ nav {
     padding: 4rem 1rem;
     background: var(--dark-yellow);
 
-    transition: 69ms ease-in, visibility 0s;
-
     &.show {
         visibility: visible;
         opacity: 1;
@@ -182,11 +180,13 @@ nav {
 }
 
 .nav-item__anim {
-    transition: 400ms ease-in; 
+    transition: 300ms ease-in; 
+    transition-delay: 800ms;
     transform: translateY(-800px);
 
     &.show {
         transform: translate(0);
+        transition: 300ms ease-out; 
     }
 
     @include u.breakpoint(desktop) {
