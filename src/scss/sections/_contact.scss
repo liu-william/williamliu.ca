@@ -2,6 +2,7 @@
 
 .contacts-section {
     margin: 1rem;
+    position: relative;
 
     @include u.breakpoint(desktop) {
         margin: 0;
@@ -127,4 +128,16 @@
         font-size: 24px;
         width: 750px;
     }
+}
+
+.scroll-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    fill: #FAF0CA;
 }

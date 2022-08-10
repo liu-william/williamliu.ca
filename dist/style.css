@@ -162,7 +162,7 @@ h6 {
 }
 
 p {
-  color: white;
+  color: #FAFBFC;
   font-family: "Roboto", "Arial";
   font-weight: 300;
 }
@@ -188,6 +188,7 @@ li {
   --dark-yellow: #F4D35E;
   --light-yellow: #FAF0CA;
   --coral: #E55C3E;
+  --card-blue: #375A7F;
 }
 
 @media (min-width: 64em) {
@@ -901,7 +902,7 @@ nav.show {
   width: 300px;
   height: 360px;
   border-radius: 8%;
-  background-color: #375A7F;
+  background-color: var(--card-blue);
   margin: 0 1rem;
   opacity: 0;
   -webkit-transition: 200ms ease-in;
@@ -972,6 +973,7 @@ nav.show {
 
 .contacts-section {
   margin: 1rem;
+  position: relative;
 }
 @media (min-width: 64em) {
   .contacts-section {
@@ -1142,6 +1144,18 @@ nav.show {
     font-size: 24px;
     width: 750px;
   }
+}
+
+.scroll-top {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  fill: #FAF0CA;
 }
 
 .footer-container {
