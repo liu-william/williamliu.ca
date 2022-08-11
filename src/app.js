@@ -56,11 +56,11 @@ window.onscroll = function() {
         }
     };
 
-const fullObserver = new IntersectionObserver(entries => {
+const showObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
         if (entry.isIntersecting) {
-            fullObserver.unobserve(entry.target)
+            showObserver.unobserve(entry.target)
         }
     })
 }, {
@@ -68,14 +68,12 @@ const fullObserver = new IntersectionObserver(entries => {
 })
 
 socials.forEach(social => {
-    fullObserver.observe(social)
+    showObserver.observe(social)
 })
 
 heroTexts.forEach(text => {
-    fullObserver.observe(text)
+    showObserver.observe(text)
 })
-
-fullObserver.observe(scrollTop)
 
 const quarterObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -91,9 +89,8 @@ const quarterObserver = new IntersectionObserver(entries => {
 aboutTexts.forEach(text => {
     quarterObserver.observe(text)
 })
-// quarterObserver.observe(aboutText)
 
-const projectObserver = new IntersectionObserver(entries => {
+const fullObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
     })
@@ -102,8 +99,10 @@ const projectObserver = new IntersectionObserver(entries => {
 })
 
 projectCards.forEach(card => {
-    projectObserver.observe(card)
+    fullObserver.observe(card)
 })
+
+fullObserver.observe(scrollTop)
 
 window.addEventListener("scroll", () => {
 
