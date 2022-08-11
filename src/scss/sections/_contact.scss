@@ -170,6 +170,13 @@
     font-size: 2em;
     cursor: pointer;
     color: var(--coral);
+    --fa-bounce-height: 13px;
+    --fa-bounce-start-scale-x: 1;
+    --fa-bounce-start-scale-y: 1; 
+    --fa-bounce-jump-scale-x: 1; 
+    --fa-bounce-jump-scale-y: 1;
+    --fa-bounce-land-scale-x: 1;
+    --fa-bounce-land-scale-y: 1;
 
     @include u.breakpoint(laptop) {
         font-size: 2em;

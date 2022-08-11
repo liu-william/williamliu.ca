@@ -10,7 +10,9 @@ const socials = document.querySelectorAll(".hero-logo__anim")
 const heroTexts = document.querySelectorAll(".hero-text__anim")
 const aboutTexts = document.querySelectorAll(".about__anim,.about__anim2")
 const navItemsAnim = document.querySelectorAll(".nav-item__anim")
+const scrollTop = document.querySelector(".scroll-logo-wrapper")
 const scrollTopBtn = document.querySelector(".scroll-logo-wrapper")
+
 
 seamless.polyfill();
 
@@ -73,7 +75,7 @@ heroTexts.forEach(text => {
     fullObserver.observe(text)
 })
 
-fullObserver.observe(scrollTopBtn)
+fullObserver.observe(scrollTop)
 
 const quarterObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -128,6 +130,10 @@ window.addEventListener("scroll", () => {
             })
         }
     })
+})
+
+scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo(0, 0)
 })
 
 // polyfill();
