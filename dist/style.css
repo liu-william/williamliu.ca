@@ -25,9 +25,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arimo", "Arial";
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(43, 64, 83)), color-stop(50%, rgb(7, 55, 79)), to(rgb(6, 31, 52)));
-  background: linear-gradient(180deg, rgb(43, 64, 83) 0%, rgb(7, 55, 79) 50%, rgb(6, 31, 52) 100%);
+  background: var(--background-gradient);
   overscroll-behavior-y: none;
+}
+
+body::-webkit-scrollbar {
+  background: var(--background-blue);
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--coral);
+  border-radius: 5px;
 }
 
 .section {
@@ -186,6 +195,7 @@ li {
 
 :root {
   --background-blue: #07374F;
+  --background-gradient: linear-gradient(180deg, rgba(43,64,83,1) 0%, rgba(7,55,79,1) 50%, rgba(6,31,52,1) 100%);
   --dark-yellow: #F4D35E;
   --light-yellow: #FAF0CA;
   --coral: #E55C3E;
@@ -813,8 +823,8 @@ nav.show {
   .about__anim {
     -webkit-transition: 600ms ease-in;
     transition: 600ms ease-in;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
   }
 }
 .about__anim.show {
@@ -828,8 +838,8 @@ nav.show {
     opacity: 0;
     -webkit-transition: 600ms ease-in;
     transition: 600ms ease-in;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
   }
 }
 .about__anim2.show {
@@ -1164,8 +1174,6 @@ nav.show {
 @media (min-width: 48em) {
   .scroll-logo-wrapper {
     margin-right: 1rem;
-    -webkit-transition: 2s ease-in-out;
-    transition: 2s ease-in-out;
     -webkit-transform: translateX(-120px);
             transform: translateX(-120px);
   }

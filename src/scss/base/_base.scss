@@ -17,8 +17,18 @@ body {
     margin: 0;    // reset rules for different browsers
     padding: 0;    // reset rules for different browsers
     font-family: "Arimo", "Arial";
-    background: linear-gradient(180deg, rgba(43,64,83,1) 0%, rgba(7,55,79,1) 50%, rgba(6,31,52,1) 100%);
+    background: var(--background-gradient);
     overscroll-behavior-y: none;
+}
+
+body::-webkit-scrollbar {
+    background: var(--background-blue);
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--coral);
+    border-radius: 5px;
 }
 
 .section {
