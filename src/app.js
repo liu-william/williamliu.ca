@@ -12,6 +12,7 @@ const aboutTexts = document.querySelectorAll(".about__anim,.about__anim2")
 const navItemsAnim = document.querySelectorAll(".nav-item__anim")
 const scrollTop = document.querySelector(".scroll-logo-wrapper")
 const scrollTopBtn = document.querySelector(".scroll-logo-wrapper")
+const projectCardFlip = document.querySelectorAll(".project-card-inner")
 
 seamless.polyfill();
 
@@ -132,6 +133,12 @@ window.addEventListener("scroll", () => {
 
 scrollTopBtn.addEventListener("click", () => {
     window.scrollTo(0, 0)
+})
+
+projectCardFlip.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("flip")
+    })
 })
 
 // polyfill();
