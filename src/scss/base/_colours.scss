@@ -1,8 +1,10 @@
 :root {
     --background-blue: #07374F;    // css custom property
+    --background-gradient: linear-gradient(180deg, rgba(43,64,83,1) 0%, rgba(7,55,79,1) 50%, rgba(6,31,52,1) 100%);
     --dark-yellow: #F4D35E;
     --light-yellow: #FAF0CA;
     --coral: #E55C3E;
+    --card-blue: #375A7F;
 }    
 // override anything in html (root used as global vars)
 // If want to use local vars, do it inside selectors

@@ -6,13 +6,30 @@ const desktopNav = document.getElementById("nav-desktop")
 const projectCards = document.querySelectorAll(".project-card")
 const sections = document.querySelectorAll(".section")
 const navItems = document.querySelectorAll(".nav-item")
+const socials = document.querySelectorAll(".hero-logo__anim")
+const heroTexts = document.querySelectorAll(".hero-text__anim")
+const aboutTexts = document.querySelectorAll(".about__anim,.about__anim2")
+const navItemsAnim = document.querySelectorAll(".nav-item__anim")
+const scrollTop = document.querySelector(".scroll-logo-wrapper")
+const scrollTopBtn = document.querySelector(".scroll-logo-wrapper")
+const projectCardFlip = document.querySelectorAll(".project-card-inner")
+
+seamless.polyfill();
 
 mobileMenuBtn.addEventListener("click", () => {
     mobileNav.classList.add("show")
+
+    navItemsAnim.forEach(item => {
+        item.classList.add("show")
+    })
 })
 
 mobileExitBtn.addEventListener("click", () => {
     mobileNav.classList.remove("show")
+
+    navItemsAnim.forEach(item => {
+        item.classList.remove("show")
+    })
 })
 
 navLinks.forEach(anchor => {
@@ -21,9 +38,10 @@ navLinks.forEach(anchor => {
 
         e.preventDefault();    // Resets def (anchor tags)
 
-        // Go to section smoothly by getting href
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
+        seamless.scrollIntoView(document.querySelector(this.getAttribute("href")), {
+            behavior: "smooth",
+            block: "center",
+            inline: "center",
         });
     });
 });
@@ -38,7 +56,41 @@ window.onscroll = function() {
         }
     };
 
-const observer = new IntersectionObserver(entries => {
+const showObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) {
+            showObserver.unobserve(entry.target)
+        }
+    })
+}, {
+    threshold: 1,
+})
+
+socials.forEach(social => {
+    showObserver.observe(social)
+})
+
+heroTexts.forEach(text => {
+    showObserver.observe(text)
+})
+
+const quarterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) {
+            quarterObserver.unobserve(entry.target)
+        }
+    })
+}, {
+    threshold: 0.25,
+})
+
+aboutTexts.forEach(text => {
+    quarterObserver.observe(text)
+})
+
+const fullObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
     })
@@ -47,8 +99,10 @@ const observer = new IntersectionObserver(entries => {
 })
 
 projectCards.forEach(card => {
-    observer.observe(card)
+    fullObserver.observe(card)
 })
+
+fullObserver.observe(scrollTop)
 
 window.addEventListener("scroll", () => {
 
@@ -76,3 +130,15 @@ window.addEventListener("scroll", () => {
         }
     })
 })
+
+scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo(0, 0)
+})
+
+projectCardFlip.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("flip")
+    })
+})
+
+// polyfill();

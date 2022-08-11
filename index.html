@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>William's Website</title>
         <link rel="stylesheet" href="dist/style.css">
+        <link href="src/imgs/logos/fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="src/imgs/logos/fontawesome/css/brands.css" rel="stylesheet">
+        <link href="src/imgs/logos/fontawesome/css/solid.css" rel="stylesheet">      
     </head>
 
     <body>
@@ -14,27 +17,38 @@
             <div class="top-nav-container">
                 <div class="nav-logos-wrapper">
                     <a href="index.html""><img src="src/imgs/logos/william'sLogo.svg" alt="William's logo" title="Home" class="personal-logo"></a>
-                    <img src="src/imgs/logos/menuLogo.svg" alt="Hamburger Menu" class="mobile-menu" id="mobile-menu-cta">
+                    <div class="mobile-menu-wrapper">
+                        <i class="fa-solid fa-burger mobile-menu" id="mobile-menu-cta"></i>
+                    </div>
                 </div>
-
                 <nav>
                     <div class="nav-container">
-                        <img src="src/imgs/logos/menuExitLogo.svg" alt="Hamburger Exit" class="mobile-exit" id="mobile-exit-cta" >
+                        <div class="mobile-exit-wrapper">
+                            <i class="fa-solid fa-down-left-and-up-right-to-center mobile-exit nav-item__anim" id="mobile-exit-cta"></i>
+                        </div>
                         <div class="nav-items-container">
                             <ul class="primary-nav">
-                                <li><a href="#home" class="nav-item active">Home</a></li>
-                                <li><a href="#about-me" class="nav-item">About Me</a></li>
-                                <li><a href="#projects" class="nav-item">Projects</a></li>
-                                <li><a href="#contact" class="nav-item">Contact</a></li>
+                                <li><a href="#home" class="nav-item active nav-item__anim">Home</a></li>
+                                <li><a href="#about-me" class="nav-item nav-item__anim">About Me</a></li>
+                                <li><a href="#projects" class="nav-item nav-item__anim">Projects</a></li>
+                                <li><a href="#contact" class="nav-item nav-item__anim">Contact</a></li>
                             </ul>   
                             <ul class="secondary-nav">
-                                <li><a href="docs/WilliamLiuResume.pdf" target=”_blank” class="nav-item button-resume">Resume</a></li>
+                                <li><a href="docs/WilliamLiuResume.pdf" target=”_blank” class="nav-item button-resume nav-item__anim">Resume</a></li>
                             </ul>   
                             <div class="nav-socials-container">
-                                <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogoBlue.svg" alt="GitHub Logo" title="GitHub" class="social-logo"></a>
-                                <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogoBlue.svg" alt="LinkedIn Logo" title="LinkedIn" class="social-logo"></a>
-                                <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogoBlue.svg" alt="Twittter Logo" title="Twitter" class="social-logo"></a>
-                                <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogoBlue.svg" alt="Instagram Logo" title="Instagram" class="social-logo"></a>
+                                <a href="https://github.com/liu-william">
+                                    <i class="fa-brands fa-github social-logo nav-item__anim nav-logo"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/-williamliu">
+                                    <i class="fa-brands fa-linkedin social-logo nav-item__anim nav-logo"></i>
+                                </a>
+                                <a href="https://twitter.com/williamliu_">
+                                    <i class="fa-brands fa-twitter social-logo nav-item__anim nav-logo"></i>
+                                </a>
+                                <a href="https://instagram.com/williamm.liu">
+                                    <i class="fa-brands fa-instagram social-logo nav-item__anim nav-logo"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -47,17 +61,25 @@
             <div class="hero-container">
                 <div class="hero-stretch-container">
                     <div class="hero-text-container">
-                        <h2>Hello, I'm William</h2>
-                        <h5>Sofware Developer &amp; CS Student</h5>
-                        <h3>Nice to meet you!</h3>
+                        <h2 class="hero-text__anim">Hello, I'm William</h2>
+                        <h5 class="hero-text__anim">Sofware Developer &amp; CS Student</h5>
+                        <h3 class="hero-text__anim">Nice to meet you!</h3>
                     </div>
                     <div class="hero-socials">
                         <h4 class="hero-socials-text">Follow me</h4>
                         <div class="hero-socials-container">
-                            <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogo.svg" alt="GitHub Logo" title="GitHub" class="social-logo"></a>
-                            <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogo.svg" alt="LinkedIn Logo" title="LinkedIn" class="social-logo"></a>
-                            <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogo.svg" alt="Twittter Logo" title="Twitter" class="social-logo"></a>
-                            <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogo.svg" alt="Instagram Logo" title="Instagram" class="social-logo"></a>
+                            <a href="https://github.com/liu-william">
+                                <i class="fa-brands fa-github social-logo hero-logo__anim"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/-williamliu">
+                                <i class="fa-brands fa-linkedin social-logo hero-logo__anim"></i>
+                            </a>
+                            <a href="https://twitter.com/williamliu_">
+                                <i class="fa-brands fa-twitter social-logo hero-logo__anim"></i>
+                            </a>
+                            <a href="https://instagram.com/williamm.liu">
+                                <i class="fa-brands fa-instagram social-logo hero-logo__anim"></i>
+                            </a>
                         </div>                    
                     </div>
                 </div>
@@ -68,10 +90,10 @@
         <section class="section" id="about-me">
             <div class="about-me-container">
                 <div class="about-text-container">
-                    <img src="src/imgs/pics/William1.jpg" alt="William's Headshot1" class="about-me-headshot">
+                    <img src="src/imgs/pics/William1.jpg" alt="William's Headshot1" class="about-me-headshot about__anim2">
                     <div class="text-container">
-                        <h2>William Liu</h2>
-                        <p class="text-desc about-desc"> 
+                        <h2 class="about__anim">William Liu</h2>
+                        <p class="text-desc about-desc about__anim"> 
                             Hi there! I'm William, a software developer and a CS student.
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             Quasi et mollitia necessitatibus dicta quas harum in. 
@@ -92,8 +114,6 @@
             </div>
         </section>
 
-        <!-- Add a technologies section -->
-
         <!-- PROJECTS -->
         <section class="section" id="projects">
             <div class="projects-container">
@@ -112,24 +132,68 @@
                 <ul class="projects-card-container">
                     <li class="project-card project-card__anim1">
                         <!-- <img src="src/imgs/pics/William1.jpg" alt="QR-Score Picture"> -->
-                        <h3 class="project-card__header">QR Score</h3>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <p>1 fjdsakfjlksdajflsdfsfsdf</p>
+                        <div class="project-card-inner">
+                            <div class="project-card__front">
+                                <h3 class="project-card__header">QR Score</h3>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-sass"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-android"></i>
+                                <i class="fa-brands fa-spotify"></i>
+                                <img src="src/imgs/logos/logo-python.svg" alt="Python logo" class="logo-python">
+                                <img src="src/imgs/logos/logo-java.svg" alt="Java logo" class="logo-java">
+                                <img src="src/imgs/logos/logo-firebase.svg" alt="Firebase logo" class="logo-firebase">
+                                <p>1 fjdsakfjlksdajflsdfsfsdf</p>
+                            </div>
+                            <div class="project-card__back">
+                                <p>This is a project that I worked on with some friends</p>
+                                <i class="fa-brands fa-square-github"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
                     </li>
-                        <li class="project-card project-card__anim2">
-                            <!-- <img src="src/imgs/pics/William1.jpg" alt="QR-Score Picture"> -->
+                    <li class="project-card project-card__anim2">
+                        <!-- <img src="src/imgs/pics/William1.jpg" alt="QR-Score Picture"> -->
+                        <div class="project-card-front">
                             <h3 class="project-card__header">QR Score</h3>
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-sass"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-android"></i>
+                            <i class="fa-brands fa-spotify"></i>
+                            <img src="src/imgs/logos/logo-python.svg" alt="Python logo" class="logo-python">
+                            <img src="src/imgs/logos/logo-java.svg" alt="Java logo" class="logo-java">
+                            <img src="src/imgs/logos/logo-firebase.svg" alt="Firebase logo" class="logo-firebase">
                             <p>1 fjdsakfjlksdajflsdfsfsdf</p>
-                        </li>
+                        </div>
+                        <div class="project-card-back">
+                            <p>This is a project that I worked on with some friends</p>
+                            <i class="fa-brands fa-square-github"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </li>
                     <li class="project-card project-card__anim1">
                         <!-- <img src="src/imgs/pics/William1.jpg" alt="QR-Score Picture"> -->
-                        <h3 class="project-card__header">QR Score</h3>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <p>1 fjdsakfjlksdajflsdfsfsdf</p>
+                        <div class="project-card-front">
+                            <h3 class="project-card__header">QR Score</h3>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-sass"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-android"></i>
+                            <i class="fa-brands fa-spotify"></i>
+                            <img src="src/imgs/logos/logo-python.svg" alt="Python logo" class="logo-python">
+                            <img src="src/imgs/logos/logo-java.svg" alt="Java logo" class="logo-java">
+                            <img src="src/imgs/logos/logo-firebase.svg" alt="Firebase logo" class="logo-firebase">
+                            <p>1 fjdsakfjlksdajflsdfsfsdf</p>
+                        </div>
+                        <div class="project-card-back">
+                            <p>This is a project that I worked on with some friends</p>
+                            <i class="fa-brands fa-square-github"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -149,20 +213,31 @@
                 </div>
                 <div class="contacts-info-container">  
                     <div class="contact-card">
-                        <img src="src/imgs/logos/mailLogo.svg" alt="Mail" title="Email" class="contact-logo">
+                        <i class="fa-solid fa-envelope contact-logo"></i>
                         <a class="contact-info" href="mailto: wwliu@ualberta.ca">wwliu@ualberta.ca</a>
                     </div>
                     <div class="contact-card">
-                        <img src="src/imgs/logos/phoneLogo.svg" alt="Phone" title="Phone" class="contact-logo">
+                        <i class="fa-solid fa-phone contact-logo"></i>                        
                         <a class="contact-info" href="tel:+1(780)-278-8629" class="contact-text">(780) 278-8629</a>
                     </div>
                     <div class="contacts-socials-container">
-                        <a href="https://github.com/liu-william"><img src="src/imgs/logos/githubLogo.svg" alt="GitHub Logo" title="GitHub" class="social-logo"></a>
-                        <a href="https://linkedin.com/in/-williamliu"><img src="src/imgs/logos/linkedinLogo.svg" alt="LinkedIn Logo" title="LinkedIn" class="social-logo"></a>
-                        <a href="https://twitter.com/williamliu_"><img src="src/imgs/logos/twitterLogo.svg" alt="Twittter Logo" title="Twitter" class="social-logo"></a>
-                        <a href="https://instagram.com/williamm.liu"><img src="src/imgs/logos/instagramLogo.svg" alt="Instagram Logo" title="Instagram" class="social-logo"></a>
+                        <a href="https://github.com/liu-william">
+                            <i class="fa-brands fa-github social-logo"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/-williamliu">
+                            <i class="fa-brands fa-linkedin social-logo"></i>
+                        </a>
+                        <a href="https://twitter.com/williamliu_">
+                            <i class="fa-brands fa-twitter social-logo"></i>
+                        </a>
+                        <a href="https://instagram.com/williamm.liu">
+                            <i class="fa-brands fa-instagram social-logo"></i>
+                        </a>
                     </div> 
                 </div>
+            </div>
+            <div class="scroll-logo-wrapper show">
+                <i class="fa-solid fa-circle-arrow-up fa-bounce"></i>
             </div>
         </section>
 
@@ -174,8 +249,10 @@
                 <h6 class="footer-text">Last Updated July 27, 2022</h6>
             </div>
         </footer>
-
+        
         <!-- Link js -->
+        <!-- seamless-scroll-polyfill (scrollIntoView to work with safari) -->
+        <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@2.1.6/lib/bundle.min.js"></script>
         <script src="src/app.js"></script>
     </body>
 </html>

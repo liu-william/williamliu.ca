@@ -1,0 +1,74 @@
+@use "../utils/" as u;
+
+.social-logo {
+    font-size: 34px;
+    color: var(--dark-yellow);
+    transition: 100ms ease-out;
+
+    @include u.breakpoint(desktop) {
+        font-size: 36px;
+    }
+
+    @include u.breakpoint(large-desktop) {
+        font-size: 38px;
+    }
+
+    @include u.breakpoint(monitor) {
+        font-size: 40px;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.fa-html5 {
+    color: #E34F26;
+}
+
+.fa-css3-alt {
+    color: #2965F1;
+}
+
+.fa-sass {
+    color: #CD6799;
+}
+
+.fa-js {
+    color: #F7DF1E;
+}
+
+.fa-android {
+    color: #A4C639;
+}
+
+.logo-java {
+    color: #5382A1;
+    width: 20px;
+    height: 20px;
+}
+
+.logo-firebase {
+    background-color: #FFA611;
+}
+
+.logo-python {
+    width: 20px;
+    height: 20px
+}
+
+.fa-spotify {
+    color: #1DB954;
+}
+
+.logo-firebase {
+    width: 20px;
+    height: 20px
+}
+
+.fa-square-github {
+}
+
+.fa-youtube {
+    color: #FF0000;
+}

@@ -17,8 +17,18 @@ body {
     margin: 0;    // reset rules for different browsers
     padding: 0;    // reset rules for different browsers
     font-family: "Arimo", "Arial";
-    background: linear-gradient(180deg, rgba(43,64,83,1) 0%, rgba(7,55,79,1) 50%, rgba(6,31,52,1) 100%);
+    background: var(--background-gradient);
     overscroll-behavior-y: none;
+}
+
+body::-webkit-scrollbar {
+    background: var(--background-blue);
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--coral);
+    border-radius: 5px;
 }
 
 .section {
@@ -29,34 +39,4 @@ body {
         margin-top: 0;
         margin-bottom: 1rem;
     }
-}
-
-.social-logo {
-    width: 32px;
-    height: 32px;
-
-    @include u.breakpoint(desktop) {
-        width: 34px;
-        height: 34px;
-    }
-
-    @include u.breakpoint(large-desktop) {
-        width: 36px;
-        height: 36px;
-    }
-
-    @include u.breakpoint(monitor) {
-        width: 38px;
-        height: 38px;
-    }
-}
-
-.text-container {
-    text-align: center;
-    padding: 1rem 0.5rem 1rem 0.5rem;
-}
-
-.text-desc {
-    margin: 0;
-    font-size: 20px;
 }

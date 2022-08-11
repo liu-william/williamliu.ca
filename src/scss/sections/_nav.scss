@@ -26,44 +26,58 @@
     justify-content: center;
 }
 
+.nav-logo {
+    color: var(--background-blue);
+}
+
 .personal-logo {
     height: 125px;
     width: 125px;
     align-self: center;
+    opacity: 0.95;
+
+    &:hover {
+        opacity: 1;
+        transform: scale(1.02);
+    }
 }
 
 .mobile-menu {
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    right: 0;
-    margin: 2rem 1rem 2rem 0;
+    font-size: 38px;
     color: var(--dark-yellow);
-    cursor: pointer;
 
-    @include u.breakpoint(desktop) {
-        display: none;
+    &-wrapper {
+        position: absolute;
+        right: 0;
+        margin: 2rem 1rem 2rem 0;
+        cursor: pointer;
+
+        @include u.breakpoint(desktop) {
+            display: none;
+        }
     }
-} 
+}
 
 nav {
-    display: none;    // Initially
-
+    visibility: hidden;    // Initially
     position: fixed;
+    opacity: 0;
     top: 0;
     right: 0;
     width: 100%;
     height: 100vh;
-    z-index: 999;    // for pos abs or fixed (high to sit on top of everything)
-    padding: 3rem 1rem;
+    z-index: 9999;    // for pos abs or fixed (high to sit on top of everything)
+    padding: 4rem 1rem;
     background: var(--dark-yellow);
 
     &.show {
-        display: block;
+        visibility: visible;
+        opacity: 1;
     }
 
     @include u.breakpoint(desktop) {
-        background: var(--coral);
+        opacity: 1;
+        visibility: visible;
         display: flex;
         background: none;
         position: unset;
@@ -100,13 +114,16 @@ nav {
 }
 
 .mobile-exit {
-    width: 45px;
-    height: 45px;
-    margin-left: auto;
-    cursor: pointer;
+    font-size: 38px;
+    color: var(--background-blue);
 
-    @include u.breakpoint(desktop) {
-        display: none;
+    &-wrapper {
+        margin-left: auto;
+        cursor: pointer;
+
+        @include u.breakpoint(desktop) {
+            display: none;
+        }
     }
 }
 
@@ -136,8 +153,13 @@ nav {
     color: var(--background-blue);
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    // @include underline-from-center;
     font-size: 24px;
+
+    @include u.breakpoint(tablet) {
+        margin-bottom: 4rem;
+    }
 
     @include u.breakpoint(desktop) {
         color: var(--dark-yellow);
@@ -145,7 +167,7 @@ nav {
         font-size: 18px;
         margin-bottom: 0;
         padding-bottom: 0.8rem;
-        border-bottom: 5px solid transparent;
+        border-bottom: 1px solid transparent;
 
         &.active {
             border-bottom: 5px solid var(--coral);
@@ -154,7 +176,7 @@ nav {
     
         &:hover {
             border-bottom: 5px solid var(--coral);
-            transition: 250ms ease-out;
+            transition: 250ms linear;
         }
     }
 
@@ -164,6 +186,21 @@ nav {
 
     @include u.breakpoint(monitor) {
         font-size: 22px;
+    }
+}
+
+.nav-item__anim {
+    transition: 300ms ease-in; 
+    transition-delay: 300ms;
+    transform: translateY(-800px);
+
+    &.show {
+        transform: translate(0);
+        transition: 300ms ease-out; 
+    }
+
+    @include u.breakpoint(desktop) {
+        transform: translate(0);
     }
 }
 
@@ -182,9 +219,12 @@ nav {
     padding: 0.69rem 0.5rem;
     
     @include u.breakpoint(desktop) {
+        opacity: 0.95;
+
         &:hover {
-            color: var(--light-yellow);
             border-bottom: solid var(--coral) 1.5px;
+            opacity: 1;
+            transform: scale(1.1);
         }    
     }
 }
@@ -207,10 +247,3 @@ nav {
         padding-right: 6rem;    
     }
 }
-
-// header {
-//     background-color: red;
-//     width: 100%;
-//     position: fixed;
-//     margin-left: 0;
-// }

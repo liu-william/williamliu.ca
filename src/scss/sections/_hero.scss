@@ -89,3 +89,32 @@
         align-items: center;
     }
 }
+
+.hero-logo__anim {
+    transition: 1.2s ease-out;
+    transform: translateY(45px);
+
+    @include u.breakpoint(large-desktop) {
+        transform: translateX(45px);
+        transition: 1s fast out, linear in;
+    }  
+
+    &.show {
+        transform: translate(0px);
+    }
+}
+
+.hero-text__anim {
+    transition: 300ms ease-in;
+    transform: translateY(-45px);
+
+    @include u.breakpoint(large-desktop) {
+        transform: translateX(-80px);
+        transition: 400ms fast out, linear in;
+    }  
+
+    &.show {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
