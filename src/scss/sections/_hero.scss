@@ -96,7 +96,7 @@
 
     @include u.breakpoint(large-desktop) {
         transform: translateX(45px);
-        transition: 1s ease-out;
+        transition: 1s fast out, linear in;
     }  
 
     &.show {
@@ -110,7 +110,7 @@
 
     @include u.breakpoint(large-desktop) {
         transform: translateX(-80px);
-        transition: 400ms ease-in;
+        transition: 400ms fast out, linear in;
     }  
 
     &.show {

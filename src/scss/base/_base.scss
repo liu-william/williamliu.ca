@@ -44,6 +44,7 @@ body::-webkit-scrollbar-thumb {
 .social-logo {
     font-size: 34px;
     color: var(--dark-yellow);
+    transition: 100ms ease-out;
 
     @include u.breakpoint(desktop) {
         font-size: 36px;
@@ -55,6 +56,10 @@ body::-webkit-scrollbar-thumb {
 
     @include u.breakpoint(monitor) {
         font-size: 40px;
+    }
+
+    &:hover {
+        transform: scale(1.2);
     }
 }
 

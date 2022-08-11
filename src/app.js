@@ -13,7 +13,6 @@ const navItemsAnim = document.querySelectorAll(".nav-item__anim")
 const scrollTop = document.querySelector(".scroll-logo-wrapper")
 const scrollTopBtn = document.querySelector(".scroll-logo-wrapper")
 
-
 seamless.polyfill();
 
 mobileMenuBtn.addEventListener("click", () => {

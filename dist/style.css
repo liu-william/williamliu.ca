@@ -53,6 +53,8 @@ body::-webkit-scrollbar-thumb {
 .social-logo {
   font-size: 34px;
   color: var(--dark-yellow);
+  -webkit-transition: 100ms ease-out;
+  transition: 100ms ease-out;
 }
 @media (min-width: 64em) {
   .social-logo {
@@ -68,6 +70,10 @@ body::-webkit-scrollbar-thumb {
   .social-logo {
     font-size: 40px;
   }
+}
+.social-logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .text-container {
@@ -686,8 +692,8 @@ nav.show {
   .hero-logo__anim {
     -webkit-transform: translateX(45px);
             transform: translateX(45px);
-    -webkit-transition: 1s ease-out;
-    transition: 1s ease-out;
+    -webkit-transition: 1s fast out, linear in;
+    transition: 1s fast out, linear in;
   }
 }
 .hero-logo__anim.show {
@@ -705,8 +711,8 @@ nav.show {
   .hero-text__anim {
     -webkit-transform: translateX(-80px);
             transform: translateX(-80px);
-    -webkit-transition: 400ms ease-in;
-    transition: 400ms ease-in;
+    -webkit-transition: 400ms fast out, linear in;
+    transition: 400ms fast out, linear in;
   }
 }
 .hero-text__anim.show {
@@ -1201,14 +1207,12 @@ nav.show {
   cursor: pointer;
   color: var(--coral);
   --fa-bounce-height: 13px;
-  --fa-bounce-start-scale-x: 1;
-  --fa-bounce-start-scale-y: 1;
   --fa-bounce-jump-scale-x: 1;
   --fa-bounce-jump-scale-y: 1;
   --fa-bounce-land-scale-x: 1;
   --fa-bounce-land-scale-y: 1;
   --fa-animation-delay: 1s;
-  --fa-animation-direction: reverse;
+  --fa-animation-direction: alternate;
 }
 @media (min-width: 48em) {
   .fa-circle-arrow-up {
