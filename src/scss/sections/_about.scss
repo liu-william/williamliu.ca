@@ -72,7 +72,7 @@
 
     @include u.breakpoint(desktop) {
         transition: 600ms ease-in;
-        transform: translateX(100px);
+        transform: translateX(25px);
     }
 
     &.show {
@@ -85,7 +85,7 @@
     @include u.breakpoint(desktop) {
         opacity: 0;
         transition: 600ms ease-in;
-        transform: translateX(-100px);
+        transform: translateX(-25px);
     }
 
     &.show {
