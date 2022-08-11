@@ -1174,8 +1174,8 @@ nav.show {
 @media (min-width: 48em) {
   .scroll-logo-wrapper {
     margin-right: 1rem;
-    -webkit-transform: translateX(-120px);
-            transform: translateX(-120px);
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
   }
 }
 @media (min-width: 64em) {
@@ -1212,6 +1212,9 @@ nav.show {
   --fa-bounce-jump-scale-y: 1;
   --fa-bounce-land-scale-x: 1;
   --fa-bounce-land-scale-y: 1;
+  --fa-animation-delay: 2s;
+  --fa-animation-duration: 2s;
+  --fa-animation-direction: reverse;
 }
 @media (min-width: 48em) {
   .fa-circle-arrow-up {

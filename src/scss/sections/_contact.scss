@@ -141,7 +141,7 @@
     
     @include u.breakpoint(laptop) {
         margin-right: 1rem;
-        transform: translateX(-120px);
+        transform: translateX(-80px);
     }
 
     @include u.breakpoint(desktop) {
@@ -176,6 +176,9 @@
     --fa-bounce-jump-scale-y: 1;
     --fa-bounce-land-scale-x: 1;
     --fa-bounce-land-scale-y: 1;
+    --fa-animation-delay: 2s;
+    --fa-animation-duration: 2s;
+    --fa-animation-direction: reverse;
 
     @include u.breakpoint(laptop) {
         font-size: 2em;
