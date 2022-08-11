@@ -248,14 +248,16 @@ li {
 
 .mobile-menu {
   font-size: 38px;
+  color: var(--dark-yellow);
+}
+.mobile-menu-wrapper {
   position: absolute;
   right: 0;
   margin: 2rem 1rem 2rem 0;
-  color: var(--dark-yellow);
   cursor: pointer;
 }
 @media (min-width: 64em) {
-  .mobile-menu {
+  .mobile-menu-wrapper {
     display: none;
   }
 }
@@ -346,11 +348,13 @@ nav.show {
 .mobile-exit {
   font-size: 38px;
   color: var(--background-blue);
+}
+.mobile-exit-wrapper {
   margin-left: auto;
   cursor: pointer;
 }
 @media (min-width: 64em) {
-  .mobile-exit {
+  .mobile-exit-wrapper {
     display: none;
   }
 }
@@ -1203,8 +1207,7 @@ nav.show {
   --fa-bounce-jump-scale-y: 1;
   --fa-bounce-land-scale-x: 1;
   --fa-bounce-land-scale-y: 1;
-  --fa-animation-delay: 2s;
-  --fa-animation-duration: 2s;
+  --fa-animation-delay: 1s;
   --fa-animation-direction: reverse;
 }
 @media (min-width: 48em) {

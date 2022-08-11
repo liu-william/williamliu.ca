@@ -168,8 +168,7 @@
     --fa-bounce-jump-scale-y: 1;
     --fa-bounce-land-scale-x: 1;
     --fa-bounce-land-scale-y: 1;
-    --fa-animation-delay: 2s;
-    --fa-animation-duration: 2s;
+    --fa-animation-delay: 1s;
     --fa-animation-direction: reverse;
 
     @include u.breakpoint(laptop) {

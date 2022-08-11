@@ -44,16 +44,19 @@
 
 .mobile-menu {
     font-size: 38px;
-    position: absolute;
-    right: 0;
-    margin: 2rem 1rem 2rem 0;
     color: var(--dark-yellow);
-    cursor: pointer;
 
-    @include u.breakpoint(desktop) {
-        display: none;
+    &-wrapper {
+        position: absolute;
+        right: 0;
+        margin: 2rem 1rem 2rem 0;
+        cursor: pointer;
+
+        @include u.breakpoint(desktop) {
+            display: none;
+        }
     }
-} 
+}
 
 nav {
     visibility: hidden;    // Initially
@@ -113,11 +116,14 @@ nav {
 .mobile-exit {
     font-size: 38px;
     color: var(--background-blue);
-    margin-left: auto;
-    cursor: pointer;
 
-    @include u.breakpoint(desktop) {
-        display: none;
+    &-wrapper {
+        margin-left: auto;
+        cursor: pointer;
+
+        @include u.breakpoint(desktop) {
+            display: none;
+        }
     }
 }
 
