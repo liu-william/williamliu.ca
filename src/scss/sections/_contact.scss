@@ -129,15 +129,42 @@
         width: 750px;
     }
 }
-
-.scroll-top {
+.scroll-logo-wrapper {
     position: absolute;
     bottom: 0;
     right: 0;
     margin-bottom: 2rem;
     margin-right: 0.5rem;
-    width: 30px;
-    height: 30px;
+    
+    @include u.breakpoint(laptop) {
+        margin-right: 1rem;
+    }
+
+    @include u.breakpoint(desktop) {
+        margin-right: 3rem;
+        margin-bottom: -1rem;
+    }
+
+    @include u.breakpoint(large-desktop) {
+        margin-right: 3.5rem;
+    }
+
+    @include u.breakpoint(monitor) {
+        margin-right: 4rem;
+        margin-bottom: 0;
+    }
+}
+
+.fa-circle-arrow-up {
+    font-size: 2em;
     cursor: pointer;
-    fill: #FAF0CA;
+    color: var(--coral);
+
+    @include u.breakpoint(laptop) {
+        font-size: 2em;
+    }
+
+    @include u.breakpoint(desktop) {
+        font-size: 2.5em;
+    }
 }

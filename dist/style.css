@@ -440,8 +440,8 @@ nav.show {
 .nav-item__anim {
   -webkit-transition: 300ms ease-in;
   transition: 300ms ease-in;
-  -webkit-transition-delay: 800ms;
-          transition-delay: 800ms;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
   -webkit-transform: translateY(-800px);
           transform: translateY(-800px);
 }
@@ -1148,16 +1148,50 @@ nav.show {
   }
 }
 
-.scroll-top {
+.scroll-logo-wrapper {
   position: absolute;
   bottom: 0;
   right: 0;
   margin-bottom: 2rem;
   margin-right: 0.5rem;
-  width: 40px;
-  height: 40px;
+}
+@media (min-width: 48em) {
+  .scroll-logo-wrapper {
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 64em) {
+  .scroll-logo-wrapper {
+    margin-right: 3rem;
+    margin-bottom: -1rem;
+  }
+}
+@media (min-width: 75em) {
+  .scroll-logo-wrapper {
+    margin-right: 3.5rem;
+  }
+}
+@media (min-width: 90em) {
+  .scroll-logo-wrapper {
+    margin-right: 4rem;
+    margin-bottom: 0;
+  }
+}
+
+.fa-circle-arrow-up {
+  font-size: 2em;
   cursor: pointer;
-  fill: #FAF0CA;
+  color: var(--coral);
+}
+@media (min-width: 48em) {
+  .fa-circle-arrow-up {
+    font-size: 2em;
+  }
+}
+@media (min-width: 64em) {
+  .fa-circle-arrow-up {
+    font-size: 2.5em;
+  }
 }
 
 .footer-container {
