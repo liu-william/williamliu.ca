@@ -40,35 +40,3 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 1rem;
     }
 }
-
-.social-logo {
-    font-size: 34px;
-    color: var(--dark-yellow);
-    transition: 100ms ease-out;
-
-    @include u.breakpoint(desktop) {
-        font-size: 36px;
-    }
-
-    @include u.breakpoint(large-desktop) {
-        font-size: 38px;
-    }
-
-    @include u.breakpoint(monitor) {
-        font-size: 40px;
-    }
-
-    &:hover {
-        transform: scale(1.2);
-    }
-}
-
-.text-container {
-    text-align: center;
-    padding: 1rem 0.5rem 1rem 0.5rem;
-}
-
-.text-desc {
-    margin: 0;
-    font-size: 20px;
-}

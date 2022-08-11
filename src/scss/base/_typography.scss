@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
-
 h1, 
 h2, 
 h3,
@@ -110,4 +109,14 @@ ul {
 
 li {
     text-decoration: none;
+}
+
+.text-container {
+    text-align: center;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.text-desc {
+    margin: 0;
+    font-size: 20px;
 }
