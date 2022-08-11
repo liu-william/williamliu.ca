@@ -26,6 +26,10 @@
     justify-content: center;
 }
 
+.nav-logo {
+    color: var(--background-blue);
+}
+
 .personal-logo {
     height: 125px;
     width: 125px;
@@ -39,8 +43,7 @@
 }
 
 .mobile-menu {
-    width: 45px;
-    height: 45px;
+    font-size: 38px;
     position: absolute;
     right: 0;
     margin: 2rem 1rem 2rem 0;
@@ -108,8 +111,8 @@ nav {
 }
 
 .mobile-exit {
-    width: 45px;
-    height: 45px;
+    font-size: 38px;
+    color: var(--background-blue);
     margin-left: auto;
     cursor: pointer;
 

@@ -42,22 +42,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social-logo {
-    width: 32px;
-    height: 32px;
+    font-size: 34px;
+    color: var(--dark-yellow);
 
     @include u.breakpoint(desktop) {
-        width: 34px;
-        height: 34px;
+        font-size: 36px;
     }
 
     @include u.breakpoint(large-desktop) {
-        width: 36px;
-        height: 36px;
+        font-size: 38px;
     }
 
     @include u.breakpoint(monitor) {
-        width: 38px;
-        height: 38px;
+        font-size: 40px;
     }
 }
 

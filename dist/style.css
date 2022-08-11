@@ -51,25 +51,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social-logo {
-  width: 32px;
-  height: 32px;
+  font-size: 34px;
+  color: var(--dark-yellow);
 }
 @media (min-width: 64em) {
   .social-logo {
-    width: 34px;
-    height: 34px;
+    font-size: 36px;
   }
 }
 @media (min-width: 75em) {
   .social-logo {
-    width: 36px;
-    height: 36px;
+    font-size: 38px;
   }
 }
 @media (min-width: 90em) {
   .social-logo {
-    width: 38px;
-    height: 38px;
+    font-size: 40px;
   }
 }
 
@@ -232,6 +229,10 @@ li {
           justify-content: center;
 }
 
+.nav-logo {
+  color: var(--background-blue);
+}
+
 .personal-logo {
   height: 125px;
   width: 125px;
@@ -246,8 +247,7 @@ li {
 }
 
 .mobile-menu {
-  width: 45px;
-  height: 45px;
+  font-size: 38px;
   position: absolute;
   right: 0;
   margin: 2rem 1rem 2rem 0;
@@ -344,8 +344,8 @@ nav.show {
 }
 
 .mobile-exit {
-  width: 45px;
-  height: 45px;
+  font-size: 38px;
+  color: var(--background-blue);
   margin-left: auto;
   cursor: pointer;
 }
@@ -1075,31 +1075,22 @@ nav.show {
 }
 
 .contact-logo {
-  width: 36px;
-  height: 36px;
+  font-size: 30px;
+  color: var(--dark-yellow);
 }
 @media (min-width: 64em) {
   .contact-logo {
-    width: 38px;
-    height: 38px;
+    font-size: 32px;
   }
 }
 @media (min-width: 75em) {
   .contact-logo {
-    width: 40px;
-    height: 40px;
-  }
-}
-@media (min-width: 75em) {
-  .contact-logo {
-    width: 42px;
-    height: 42px;
+    font-size: 34px;
   }
 }
 @media (min-width: 90em) {
   .contact-logo {
-    height: 44px;
-    width: 44px;
+    font-size: 36px;
   }
 }
 
