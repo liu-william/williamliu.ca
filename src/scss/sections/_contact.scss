@@ -130,14 +130,19 @@
     }
 }
 .scroll-logo-wrapper {
+    opacity: 0;
     position: absolute;
     bottom: 0;
     right: 0;
     margin-bottom: 2rem;
     margin-right: 0.5rem;
+    transition: 1.5s ease-in-out;
+    transform: translateX(-30px);
     
     @include u.breakpoint(laptop) {
         margin-right: 1rem;
+        transition: 2s ease-in-out;
+        transform: translateX(-120px);
     }
 
     @include u.breakpoint(desktop) {
@@ -153,7 +158,13 @@
         margin-right: 4rem;
         margin-bottom: 0;
     }
+
+    &.show {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
+
 
 .fa-circle-arrow-up {
     font-size: 2em;

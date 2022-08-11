@@ -1149,15 +1149,24 @@ nav.show {
 }
 
 .scroll-logo-wrapper {
+  opacity: 0;
   position: absolute;
   bottom: 0;
   right: 0;
   margin-bottom: 2rem;
   margin-right: 0.5rem;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
 }
 @media (min-width: 48em) {
   .scroll-logo-wrapper {
     margin-right: 1rem;
+    -webkit-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
   }
 }
 @media (min-width: 64em) {
@@ -1176,6 +1185,11 @@ nav.show {
     margin-right: 4rem;
     margin-bottom: 0;
   }
+}
+.scroll-logo-wrapper.show {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
 }
 
 .fa-circle-arrow-up {
