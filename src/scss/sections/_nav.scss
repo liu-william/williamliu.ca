@@ -154,7 +154,6 @@ nav {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
-    // @include underline-from-center;
     font-size: 24px;
 
     @include u.breakpoint(tablet) {
@@ -196,7 +195,6 @@ nav {
 
     &.show {
         transform: translate(0);
-        transition: 300ms ease-out; 
     }
 
     @include u.breakpoint(desktop) {
