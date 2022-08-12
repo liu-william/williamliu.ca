@@ -14,8 +14,6 @@ const scrollTop = document.querySelector(".scroll-logo-wrapper")
 const scrollTopBtn = document.querySelector(".scroll-logo-wrapper")
 const projectCardFlip = document.querySelectorAll(".project-card-inner")
 
-seamless.polyfill();
-
 mobileMenuBtn.addEventListener("click", () => {
     mobileNav.classList.add("show")
 
@@ -40,8 +38,8 @@ navLinks.forEach(anchor => {
 
         seamless.scrollIntoView(document.querySelector(this.getAttribute("href")), {
             behavior: "smooth",
-            block: "center",
-            inline: "center",
+            // block: "center",
+            // inline: "center",
         });
     });
 });
