@@ -19,16 +19,16 @@ body {
     font-family: "Arimo", "Arial";
     background: var(--background-gradient);
     overscroll-behavior-y: none;
-}
+    
+    &::-webkit-scrollbar {
+        background: var(--background-blue);
+        width: 10px;
+    }
 
-body::-webkit-scrollbar {
-    background: var(--background-blue);
-    width: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: var(--coral);
-    border-radius: 5px;
+    &::-webkit-scrollbar-thumb {
+        background: var(--coral);
+        border-radius: 5px;
+    }
 }
 
 .section {
