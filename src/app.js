@@ -38,8 +38,6 @@ navLinks.forEach(anchor => {
 
         seamless.scrollIntoView(document.querySelector(this.getAttribute("href")), {
             behavior: "smooth",
-            // block: "center",
-            // inline: "center",
         });
     });
 });
@@ -138,5 +136,3 @@ projectCardFlip.forEach(card => {
         card.classList.toggle("flip")
     })
 })
-
-// polyfill();
