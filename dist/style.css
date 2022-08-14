@@ -877,19 +877,13 @@ nav.show {
   }
 }
 
-.about__anim1 {
-  opacity: 0;
-  -webkit-transition: 300ms ease-in;
-  transition: 300ms ease-in;
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
-}
 @media (min-width: 64em) {
   .about__anim1 {
+    opacity: 0;
     -webkit-transition: 600ms ease-in;
     transition: 600ms ease-in;
-    -webkit-transform: translateX(25px);
-            transform: translateX(25px);
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
   }
 }
 .about__anim1.show {
@@ -898,13 +892,19 @@ nav.show {
           transform: translate(0);
 }
 
+.about__anim2 {
+  opacity: 0;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+}
 @media (min-width: 64em) {
   .about__anim2 {
-    opacity: 0;
     -webkit-transition: 600ms ease-in;
     transition: 600ms ease-in;
-    -webkit-transform: translateX(-25px);
-            transform: translateX(-25px);
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
   }
 }
 .about__anim2.show {

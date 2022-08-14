@@ -66,13 +66,10 @@
 }
 
 .about__anim1 {
-    opacity: 0;
-    transition: 300ms ease-in;
-    transform: translateY(80px);
-
     @include u.breakpoint(desktop) {
+        opacity: 0;
         transition: 600ms ease-in;
-        transform: translateX(25px);
+        transform: translateX(-25px);
     }
 
     &.show {
@@ -82,10 +79,13 @@
 }
 
 .about__anim2 {
+    opacity: 0;
+    transition: 300ms ease-in;
+    transform: translateY(80px);
+
     @include u.breakpoint(desktop) {
-        opacity: 0;
         transition: 600ms ease-in;
-        transform: translateX(-25px);
+        transform: translateX(25px);
     }
 
     &.show {
