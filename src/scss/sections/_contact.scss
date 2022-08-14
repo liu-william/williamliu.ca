@@ -55,6 +55,12 @@
     }
 }
 
+.contact-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+}
+
 .contact-logo {
     font-size: 30px;
     color: var(--dark-yellow);
@@ -71,7 +77,7 @@
         font-size: 36px;
     }
 }
-                
+
 .contact-info {
     font-size: 16px;
     color: white;
@@ -91,12 +97,6 @@
     @include u.breakpoint(monitor) {
         font-size: 22px;
     }
-}
-
-.contact-card {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr;
 }
 
 .contacts-text {

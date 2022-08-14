@@ -9,21 +9,6 @@
     }
 }
 
-.about-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    @include u.breakpoint(desktop) {
-        height: 100%;
-        flex-direction: row;
-        column-gap: 3rem;
-        margin-bottom: 2rem;
-        justify-content: space-evenly;
-    }
-}
-
 .about-me-headshot {
     margin: 1rem;
     border-radius: 50%;
@@ -47,6 +32,21 @@
     }
 }
 
+.about-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @include u.breakpoint(desktop) {
+        height: 100%;
+        flex-direction: row;
+        column-gap: 3rem;
+        margin-bottom: 2rem;
+        justify-content: space-evenly;
+    }
+}
+
 .about-desc {
 
     @include u.breakpoint(desktop) {
@@ -65,7 +65,7 @@
     }
 }
 
-.about__anim {
+.about__anim1 {
     opacity: 0;
     transition: 300ms ease-in;
     transform: translateY(80px);

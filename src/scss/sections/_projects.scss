@@ -112,14 +112,15 @@
 
     &__back {
         display: grid;
-        grid-template-rows: auto 100px;
+        grid-template-rows: auto 80px;
         border-radius: 8%;
         background-color: var(--card-blue);
         transform: rotateY(-180deg);
         justify-items: center;
 
         &-text {
-            width: 250px;
+            width: 280px;
+            margin: 1rem 0 0 0;
             padding: 1.3rem;
             display: flex;
             text-align: center;
