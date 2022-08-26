@@ -108,17 +108,17 @@
 .contacts-desc {
     @include u.breakpoint(desktop) {
         font-size: 20px;
-        width: 600px;
+        width: 700px;
     }
 
     @include u.breakpoint(large-desktop) {
         font-size: 22px;
-        width: 700px;
+        width: 750px;
     }
 
     @include u.breakpoint(monitor) {
         font-size: 24px;
-        width: 750px;
+        width: 950px;
     }
 }
 

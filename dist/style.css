@@ -1302,19 +1302,19 @@ nav.show {
 @media (min-width: 64em) {
   .contacts-desc {
     font-size: 20px;
-    width: 600px;
+    width: 700px;
   }
 }
 @media (min-width: 75em) {
   .contacts-desc {
     font-size: 22px;
-    width: 700px;
+    width: 750px;
   }
 }
 @media (min-width: 90em) {
   .contacts-desc {
     font-size: 24px;
-    width: 750px;
+    width: 950px;
   }
 }
 
