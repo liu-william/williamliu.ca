@@ -190,7 +190,6 @@ nav {
 
 .nav-item__anim {
     transition: 300ms ease-in; 
-    transition-delay: 300ms;
     transform: translateY(-800px);
 
     &.show {

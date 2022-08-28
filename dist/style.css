@@ -520,8 +520,6 @@ nav.show {
 .nav-item__anim {
   -webkit-transition: 300ms ease-in;
   transition: 300ms ease-in;
-  -webkit-transition-delay: 300ms;
-          transition-delay: 300ms;
   -webkit-transform: translateY(-800px);
           transform: translateY(-800px);
 }
