@@ -31,10 +31,12 @@ body {
 body::-webkit-scrollbar {
   background: var(--background-blue);
   width: 10px;
+  height: 10px;
 }
 body::-webkit-scrollbar-thumb {
   background: var(--coral);
   border-radius: 5px;
+  height: 10px;
 }
 
 .section {
