@@ -60,7 +60,6 @@
     }
 
     @include u.breakpoint(monitor) {
-        font-size: 24px;
         width: 750px;
     }
 }
